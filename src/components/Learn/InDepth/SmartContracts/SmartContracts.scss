@@ -1,0 +1,171 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/gb_variables';
+@import '../../../../assets/scss/mixin';
+
+.gb-smart-contracts-main {
+    .gb-money-banner {
+        &:after {
+            background: #70797c;
+            height: calc(100% - 100px);
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+        }
+        .gb-money-dtl {
+            padding-bottom: 130px;
+            @media (max-width: 767px) {
+                padding-bottom: 0px;
+            }
+            .gb-basic-btn {
+                background: rgba(255, 255, 255, 0.35);
+            }
+            .gb-money-banner-dtl {
+                width: 100%;
+                p {
+                    margin-bottom: 35px;
+                    @media (max-width: 1199px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (max-width: 991px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .gb-dephth-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .gb-money-video {
+                img {
+                    box-shadow: none;
+                    border-radius: 0px;
+                }
+            }
+            .gb-segment-blk {
+                width: 100%;
+                .gb-next-menublk {
+                    .gb-next-menubtn {
+                        min-width: 115px;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-content-blk {
+        background: url(../../../../assets/images/in-depth/smartcontarcts-left.svg), url(../../../../assets/images/in-depth/smartcontarcts-right.svg);
+        background-repeat: no-repeat;
+        background-position: left 35px center, right 35px center;
+        background-color:#70797c;
+        // background-size: 36%;
+        background-size: 233px, 306px;
+        @media (max-width: 1199px) {  
+            background-size: 190px, 250px;
+        } 
+        @media (max-width: 767px) { 
+            background-size: 20%, 25%;
+            background-position: left 25px center, right 25px center;
+        } 
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn {
+                    color: #70797c;
+                    .gb-right-arrow {
+                        background: url(../../../../assets/images/right-arrow-line-smart-contract.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-next-pageblk {
+        .gb-next-page-menu {
+            span {
+                color: $dark-green-color;
+            }
+            .gb-letsgo-btnblk {
+                .gb-letsgobtn {
+                    background: $dark-green-color;
+                }
+            }
+        }
+    }
+    .gb-money-content-wrapper { 
+        padding: 0px;
+        .gb-money-content-dtl{
+            .gb-money-content-desc{
+                > *{
+                    &:first-child{
+                        margin-bottom: 30px !important;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+        h2{
+            color: #70797c;
+            font-weight: 700;
+        }
+        .gb-smart-contract-img1{
+            @media (max-width:991px){
+                margin-bottom: 0px;
+            }
+            img{
+                width: 455px;
+            }
+        }
+        .gb-smart-contract-img2{
+            @media (max-width:991px){
+                margin-bottom: 0px;
+            }
+            img{
+                width: 508px;
+            }
+        }
+        .gb-content-row{
+            &:last-child{
+                border: none;
+            }
+            .row{
+                padding: 0px 0px 30px;
+            }
+        }
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar {
+                    background: #70797c;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    span {
+                        color: #70797c;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-modal {
+        .gb-quiz-body {
+            background: #70797c;
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev {
+                    color: #70797c;
+                    .gb-prev-icon {
+                        background: url(../../../../assets/images/right-arrow-line-smart-contract.svg) no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next {
+                    color: #70797c;
+                    .gb-next-icon {
+                        background: url(../../../../assets/images/right-arrow-line-smart-contract.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

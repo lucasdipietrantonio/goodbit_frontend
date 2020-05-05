@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/gb_variables';
+@import '../../assets/scss/mixin';
+
+.gb-toaster-msg{
+    animation: deactive 0.3s linear forwards;
+    left: 0px;
+    top:0px;
+    right: 0px;
+    text-align: center;
+    z-index: 1055;
+    position:fixed;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    &.gb-sucsess-msg{
+        animation: active 0.3s linear forwards;
+        transform: translateY(48px);
+        opacity: 1;
+    }
+    h1{
+        color: $white;
+        padding: 15px 30px;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 5px;
+        &.green{
+            background: green;
+        }
+        &.red{
+            background: red;
+        }
+    }
+
+}

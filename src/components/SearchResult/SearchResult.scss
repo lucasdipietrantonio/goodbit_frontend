@@ -1,0 +1,292 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/gb_variables';
+@import '../../assets/scss/mixin';
+
+.gb-search-block{
+    padding: 105px 0px 115px;
+    @media (max-width:767px){
+        padding: 60px 0px;
+    }
+    .gb-search-content{
+        background: url('../../assets/images/search-bg-left.svg'), url('../../assets/images/search-bg-right.svg');
+        background-repeat: no-repeat;
+        background-position:  left top, right top;
+        background-size: 31px auto, 55px auto;
+        @media (max-width:767px){
+            background: transparent;
+        }
+    }
+
+    .gb-search-inner-box{
+        .gb-search-form{
+            .form-group{
+                position: relative;
+                margin-bottom: 0px;
+            }
+            input{
+                border: none;
+                font-size: 60px;
+                letter-spacing: -1.5px;
+                color: $text-b;
+                font-weight: 700;
+                height: auto;
+                line-height: normal;
+                border-bottom: 1px solid #ebecec;
+                border-radius: 0px;
+                padding-left: 56px;
+                padding-right: 60px;
+                background: transparent url('../../assets/images/search-icon-black.svg') no-repeat;
+                background-size: 28px 28px;
+                background-position: left center;
+                @media (max-width:767px){
+                    font-size: 30px;
+                    background-size: 20px 20px;
+                    padding-left: 30px;
+                }
+                &:focus{
+                    box-shadow: none;
+                    + .gb-search-close{
+                        opacity: 1;
+                    }
+                }
+            }
+            .gb-search-close{
+                position: absolute;
+                right: 0;
+                background: url('../../assets/images/close-black.svg') no-repeat;
+                background-size: 27px;
+                top: 0px;
+                border: none;
+                width: 30px;
+                height: 30px;
+                bottom: 0px;
+                margin: auto;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                @media (max-width:767px){
+                    width: 15px;
+                    height: 15px;
+                    background-size: 100%;
+                }
+            }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color:rgba(86,86,86,0.5);
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color:rgba(86,86,86,0.5);
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color:rgba(86,86,86,0.5);
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                color:rgba(86,86,86,0.5);
+            }
+        }
+        .gb-search-result{
+            margin-top: 70px;
+            @media (max-width:767px){
+                margin-top: 20px;
+            }
+            .gb-search-result-row{
+                display: flex;
+                align-items: center;
+                padding: 55px 0px;
+                border-bottom: 1px solid #ecedee;
+                @media (max-width:767px){
+                    padding: 35px 0px;
+                    align-items: flex-start;
+                }
+                .gb-search-result-left{
+                    width: 163px;
+                    @media (max-width:767px){
+                        width: 45px;
+                        margin-top: 10px;
+                    }
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .gb-search-result-detail{
+                    padding-left: 70px;
+                    flex: 0 0 calc(100% - 165px);
+                    @media (max-width:767px){
+                        flex: 0 0 calc(100% - 45px);
+                        padding-left: 15px;
+                    }
+                    label{
+                        font-size: 12.5px;
+                        font-weight: bold;
+                        letter-spacing: 1.25px;
+                        margin-bottom: 0px;
+                        text-transform: uppercase;
+                        @media (max-width:767px){
+                            font-size: 10px;
+                        }
+                    }
+                    .money-text{
+                        color: $green-color;
+                    }
+                    .bitcoin-text{
+                        color: $orange-color;
+                    }
+                    .blockchain-text{
+                        color: $purple-color;
+                    }
+                    .ethereum-text{
+                        color: $ethereum-color;
+                    }
+                    .future-text{
+                        color: $light-red;
+                    }  
+                    .history-text{
+                        color: #5169E0;
+                    }
+                    .mining-text{
+                        color: #dc7518;
+                    }
+                    .cryptography-text{
+                        color: #ddbe22;
+                    }
+                    .proof-of-text{
+                        color: #812be1;
+                    }
+                    .scalability-text{
+                        color: #4cb0ed;
+                    }
+                    .smart-contracts-text{
+                        color: #70797c;
+                    }
+                    .nodes-text{
+                        color: $bg-yellow;
+                    }
+                    .fiat-currency-text{
+                        color: #3bbc4a;
+                    }
+                    .digital-assets-text{
+                        color: #33d1b3;
+                    }
+                    .forks-text{
+                        color: #9abecc;
+                    }
+                    .privacy-text{
+                        color: #5086ff;
+                    }
+                    .icos-text{
+                        color: #B737E2;
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 50px;
+            line-height: 55px;
+            letter-spacing: -1.25px;
+            font-weight: 500;
+            color: $text-b;
+            margin: 15px 0px;
+            @media (max-width:767px){
+                font-size: 25px;
+                line-height: 27px;
+            }
+        }
+        .gb-breadcrumb{
+            font-size: 12.5px;
+            font-weight: bold;
+            letter-spacing: 1.25px; 
+            color: #bbbbbc;
+            text-transform: uppercase;
+            @media (max-width:767px){
+                font-size: 10px;
+            }
+        }
+        .gb-invention-block{
+            padding: 60px 0 110px;
+            border-bottom: 1px solid #ecedee;
+            @media (max-width:991px){
+                padding: 35px 0px 40px;
+            }
+            .gb-invention-title{
+                img{
+                    max-width: 100%;
+                    width: 46px;
+                    @media (max-width:767px){
+                        width: 24px;
+                    }
+                }
+                span{
+                    display: block;
+                    font-size: 12.5px;
+                    font-weight: bold;
+                    letter-spacing: 1.25px; 
+                    color: $blue;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                    width: 100%;
+                    @media (max-width:767px){
+                        font-size: 10px;
+                    }
+                }
+            }
+            .gb-invention-detail{ 
+                width: 780px;
+                max-width: 100%;
+                margin-bottom: 10px;
+                overflow: hidden;
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.5px;
+                    color: $text-b;
+                    font-weight: 500;
+                    margin-bottom: 15px;
+                    @media (max-width:767px){
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                    br{
+                        display: none;
+                    }
+                } 
+                h2{
+                    margin: 15px 0px 10px;
+                }
+            }
+        }
+        .gb-nosearch-found{ 
+            padding-top: 85px;
+            @media (max-width:767px){
+                padding-top: 50px;
+            }
+            span{
+                font-size: 15px;
+                color: $text-b;
+                font-weight: 600;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                @media (max-width:767px){
+                    font-size: 12px;
+                }
+                img{
+                    width: 24px;
+                    display: inline-block;
+                    padding-right: 5px;
+                    position: relative;
+                    top: -1px;
+                    @media (max-width:767px){
+                        width: 21px;
+                    }
+                }
+                .gb-nerd-img{
+                    width: 28px;
+                    @media (max-width:767px) {
+                        width: 25px;
+                    }
+                }
+                a{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

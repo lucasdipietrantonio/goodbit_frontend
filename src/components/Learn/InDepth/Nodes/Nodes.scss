@@ -1,0 +1,176 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/gb_variables';
+@import '../../../../assets/scss/mixin';
+.gb-nodes-main {
+    .gb-money-banner {
+        &:after {
+            background: $bg-yellow;
+            height: calc(100% - 100px);
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+        }
+        .gb-money-dtl {
+            padding-bottom: 130px;
+            @media (max-width: 767px) {
+                padding-bottom: 0px;
+            }
+            .gb-basic-btn {
+                background: rgba(255, 255, 255, 0.35);
+            }
+            .gb-money-banner-dtl {
+                width: 100%;
+                p {
+                    margin-bottom: 35px;
+                    @media (max-width: 1199px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (max-width: 991px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .gb-dephth-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .gb-money-video {
+                img {
+                    box-shadow: none;
+                    border-radius: 0px;
+                }
+            }
+            .gb-segment-blk {
+                width: 100%;
+                .gb-next-menublk {
+                    .gb-next-menubtn {
+                        min-width: 115px;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-content-blk {
+        background: url(../../../../assets/images/nodes/nodes-left-quiz.svg), url(../../../../assets/images/nodes/nodes-right-quiz.svg);
+        background-repeat: no-repeat;
+        background-position: left top 60px, right -180px top 40px;
+        background-color: $bg-yellow;
+        background-size: 36%;
+        @media (max-width: 1199px) {
+            background-position: left top 60px, right -120px top 80px;
+            background-size: 34%;
+        }
+        @media (max-width: 991px) {
+            background-position: left top 60px, right -80px top 80px;
+            background-size: 32%;
+        }
+        @media (max-width: 767px) {
+            background-position: left top 60px, right -60px top 80px;
+        }
+        @media (max-width: 480px) {
+            background-position: left top 120px, right -30px top 130px;
+        }
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn {
+                    color: $bg-yellow;
+                    .gb-right-arrow {
+                        background: url(../../../../assets/images/right-arrow-line-yellow.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-next-pageblk {
+        .gb-next-page-menu {
+            span {
+                color: $dark-green-color;
+            }
+            .gb-letsgo-btnblk {
+                .gb-letsgobtn {
+                    background: $dark-green-color;
+                }
+            }
+        }
+    }
+    .gb-money-content-wrapper { 
+        padding: 0px;
+        .gb-money-content-dtl{
+            .gb-money-content-desc{
+                > *{
+                    &:first-child{
+                        margin-bottom: 30px !important;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+        h2{
+            color: $bg-yellow;
+            font-weight: 700;
+        }
+        .gb-nodes-img1{
+            @media (max-width:991px){
+                margin-bottom: 0px;
+            }
+            img{
+                width: 325px;
+            }
+        }
+        .gb-nodes-img2{
+            @media (max-width:991px){
+                margin-bottom: 0px;
+            }
+            img{
+                width: 325px;
+            }
+        }
+        .gb-content-row{
+            &:last-child{
+                border: none;
+            }
+            .row{
+                padding: 0px 0 30px ;
+            }
+        }
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar {
+                    background: $bg-yellow;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    span {
+                        color: $bg-yellow;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-modal {
+        .gb-quiz-body {
+            background: $bg-yellow;
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev {
+                    color: $bg-yellow;
+                    .gb-prev-icon {
+                        background: url(../../../../assets/images/right-arrow-line-yellow.svg) no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next {
+                    color: $bg-yellow;
+                    .gb-next-icon {
+                        background: url(../../../../assets/images/right-arrow-line-yellow.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

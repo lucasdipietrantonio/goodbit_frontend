@@ -1,0 +1,206 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/gb_variables';
+@import '../../../../assets/scss/mixin';
+
+.gb-cryptography-main{
+    .gb-money-banner {
+        &:after {
+            background: #DDBE22;
+            height: calc(100% - 100px);
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+        }
+        .gb-money-dtl {
+            padding-bottom: 130px;
+            @media (max-width: 767px) {
+                padding-bottom: 0px;
+            }
+            .gb-basic-btn {
+                background: rgba(255, 255, 255, 0.35);
+            }
+            .gb-money-banner-dtl {
+                width: 100%;
+                p {
+                    margin-bottom: 35px;
+                    @media (max-width: 1199px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (max-width: 991px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .gb-dephth-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .gb-money-video {
+                text-align: center;
+                img {
+                    box-shadow: none;
+                    border-radius: 0px;
+                    width: 340px;
+                    max-width: 100%;
+                }
+            }
+            .gb-segment-blk {
+                width: 100%;
+                .gb-next-menublk {
+                    .gb-next-menubtn {
+                        min-width: 115px;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-content-blk {
+        background: url(../../../../assets/images/in-depth/cryptography-main.svg), url(../../../../assets/images/in-depth/cryptography-right.svg);
+        background-repeat: no-repeat;
+        background-position: left 10% center, right 10% center;
+        background-color:#DDBE22;
+        background-size: 255px, 255px; 
+        @media (max-width: 1199px) {   
+            background-size: 175px, 190px;
+        } 
+        @media (max-width: 991px) {  
+            background-position: left 35px bottom 50px, right 35px bottom 50px;
+        } 
+        @media (max-width: 767px) {  
+            background-size: 100px, 100px;
+            background-position: left 25px center, right 25px center;
+        } 
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn {
+                    color: #DDBE22;
+                    .gb-right-arrow {
+                        background: url(../../../../assets/images/right-arrow-line-cryptography.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-next-pageblk {
+        .gb-next-page-menu {
+            span {
+                color: $dark-green-color;
+            }
+            .gb-letsgo-btnblk {
+                .gb-letsgobtn {
+                    background: $dark-green-color;
+                }
+            }
+        }
+    }
+    .gb-money-content-wrapper { 
+        padding: 0px;
+        .gb-money-content-dtl{
+            .gb-money-content-desc{
+                > *{
+                    &:first-child{
+                        margin-bottom: 30px !important;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+        h2{
+            color: #ddbe22;
+            font-weight: 700;
+        }
+        .gb-crypto-img1{ 
+            img{
+                width: 442px;
+            }
+        }
+        .gb-crypto-img2{
+            margin: 60px 0px;
+            @media (max-width:1199px){
+                margin: 40px 0px;
+            }
+            @media (max-width:991px){
+                margin: 30px 0px 0px;
+            }
+            img{
+                width: 440px;
+            }
+        }
+        .gb-crypto-img3{
+            @media (max-width:1199px){
+                margin: 40px 0px;
+            }
+            @media (max-width:991px){
+                margin: 30px 0px 0px;
+            }
+            img{
+                width: 447px;
+            }
+        }
+        .gb-crypto-img4{
+            margin: 60px 0px; 
+            @media (max-width:1199px){
+                margin: 40px 0px;
+            }
+            @media (max-width:991px){
+                margin: 30px 0px 0px;
+            }
+            img{
+                width: 440px;
+            } 
+        }
+        .gb-crypto-img5{
+            margin-top: 30px;
+            img{
+                width: 349px;
+            }
+        }
+        .gb-content-row{
+            &:last-child{
+                border: none;
+            }
+            .row{
+                padding: 0px 0px 30px;
+            }
+        }
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar {
+                    background: #DDBE22;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    span {
+                        color: #DDBE22;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-modal {
+        .gb-quiz-body {
+            background: #DDBE22;
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev {
+                    color: #DDBE22;
+                    .gb-prev-icon {
+                        background: url(../../../../assets/images/right-arrow-line-cryptography.svg) no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next {
+                    color: #DDBE22;
+                    .gb-next-icon {
+                        background: url(../../../../assets/images/right-arrow-line-cryptography.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

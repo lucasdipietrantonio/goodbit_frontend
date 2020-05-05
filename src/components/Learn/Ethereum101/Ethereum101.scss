@@ -1,0 +1,144 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/gb_variables';
+@import '../../../assets/scss/mixin';
+
+
+.gb-ethereum-main{
+    .gb-money-banner{
+        &:after{
+            background-image: -webkit-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+            background-image: -moz-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+            background-image: -o-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+            background-image: linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+        }
+        .gb-money-dtl{
+            .gb-ethereum-icon{
+                &:after{
+                    background: url('../../../assets/images/nav/ethereum-icon.svg') no-repeat;
+                }
+            }
+        }
+    } 
+    .gb-money-content-wrapper{
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar{
+                    background: $ethereum-color;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    width: auto !important;
+                    span{
+                        color: $ethereum-color;
+                    }
+                }
+            }
+        } 
+        .gb-ethereum-img1{
+            img{
+                // width: 325px;
+            }
+        }
+        .gb-ethereum-img2{
+            img{
+                width: 323px;
+            }
+        }
+        .gb-ethereum-img3{
+            img{
+                width: 439px;
+            }
+        }
+        .gb-ethereum-img4{
+            img{
+                width: 330px;
+            }
+        }
+        .gb-ethereum-img5{
+            img{
+                width: 316px;
+            }
+        }
+        .gb-ethereum-img6{
+            img{
+                // width: 265px;
+            }
+        }
+        .gb-ethereum-img7{
+            img{
+                width: 440px;
+            }
+        }
+        .gb-ethereum-img8{
+            img{
+                width: 440px;
+            }
+        }
+        .gb-ethereum-img9{
+            img{
+                width: 360px;
+            }
+        }
+        .gb-ethereum-img10{
+            img{
+                width: 366px;
+            }
+        }
+        .gb-ethereum-img11{
+            img{
+                width: 545px;
+            }
+        } 
+    }
+    .gb-quiz-content-blk{
+        background-image: -webkit-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+        background-image: -moz-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+        background-image: -o-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+        background-image: linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn{
+                    color: $ethereum-color;
+                    .gb-right-arrow{
+                        background: url('../../../assets/images/right-arrow-line-ethereum.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-summary-blk {
+        .gb-summary-title {
+            h3{
+                color: $ethereum-color;
+            }
+        }
+    }
+}
+
+.gb-quiz-ethereum-modal{ 
+    .gb-quiz-modal {
+        .gb-quiz-body{
+            background-image: -webkit-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+            background-image: -moz-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+            background-image: -o-linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+            background-image: linear-gradient(150deg, #5c6bc0 55%, #5a3c96 100%);
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev{
+                    color: $ethereum-color;
+                    .gb-prev-icon{
+                        background: url('../../../assets/images/right-arrow-line-ethereum.svg') no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next{
+                    color: $ethereum-color;
+                    .gb-next-icon{
+                        background: url('../../../assets/images/right-arrow-line-ethereum.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

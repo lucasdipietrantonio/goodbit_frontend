@@ -1,0 +1,112 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/gb_variables';
+@import '../../assets/scss/mixin'; 
+
+.gb-tems-block{
+    padding: 110px 0px;
+    @media (max-width:1199px){
+        padding: 90px 0px;
+    }
+    @media (max-width:767px){
+        padding: 50px 0px;
+    }
+    h1{
+        font-size: 60px;
+        color: $text-b;
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        margin-bottom: 50px;
+        @media (max-width:1199px){
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+        @media (max-width:767px){
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .gb-terms-date{
+        font-size: 15px;
+        text-transform: uppercase;
+        color: $text-b;
+        opacity: 0.7;
+        margin-bottom: 50px;
+        display: block;
+        @media (max-width:767px){
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        color: $text-b;
+        letter-spacing: -0.25px;
+        margin-bottom: 30px;
+        @media (max-width:767px){
+            font-size: 15px;
+        }
+    }
+    a{
+        font-size: 16px;
+        color: $blue;
+        font-weight: 500;
+        letter-spacing: -0.25px; 
+        &:hover{
+            opacity: 0.75;
+        }
+        @media (max-width:767px){
+            font-size: 15px;
+        }
+    }
+    
+    address{
+        font-size: 16px;
+        font-weight: 500;
+        color: $text-b;
+        letter-spacing: -0.25px;
+        margin-bottom: 30px;
+        @media (max-width:767px){
+            font-size: 15px;
+        }
+    }
+    label{
+        margin-bottom: 30px;
+        a{
+            display: flex;
+        }
+    }
+    ul{
+        padding-left: 30px;
+        li{
+            font-size: 16px;
+            font-weight: 500;
+            color: $text-b;
+            letter-spacing: -0.25px;
+            margin-bottom: 20px;
+            @media (max-width:767px){
+                font-size: 15px;
+            }
+        }
+    }
+    .gb-alpha{
+        li{
+            list-style: lower-alpha;
+        }
+    }
+    .gb-roman{
+        li{
+            list-style: lower-roman;
+        } 
+    }
+    .gb-number{
+        li{
+            list-style: decimal;
+        }
+    }
+    .gb-bullet{
+        li{
+            list-style: disc;
+        }
+    }
+}

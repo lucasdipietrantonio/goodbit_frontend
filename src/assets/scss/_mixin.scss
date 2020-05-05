@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'gb_variables';
+@mixin gb-btn-darkblue {
+    min-width: 155px;
+    height: 40px;
+    ;
+    background: #3f4790;
+    border-radius: 50px;
+    color: $white;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 10px;
+    &:hover {
+        color: $white;
+    }
+    .gb-right-arrow {
+        width: 14px;
+        height: 10px;
+        background: url('../../assets/images/right-arrow-line.svg') no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+@mixin gb-btn-blue {
+    min-width: 155px;
+    height: 40px;
+    ;
+    background: $blue;
+    border-radius: 50px;
+    color: $white;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 10px;
+    &:hover {
+        color: $white;
+    }
+    .gb-right-arrow {
+        width: 14px;
+        height: 10px;
+        background: url('../../assets/images/right-arrow-line.svg') no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+@mixin transition {
+    transition: all 0.2s linear 0s !important;
+    -webkit-transition: all 0.2s linear 0s !important;
+    -moz-transition: all 0.2s linear 0s !important;
+    -o-transition: all 0.2s linear 0 !important;
+}

@@ -1,0 +1,161 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/gb_variables';
+@import '../../../assets/scss/mixin';
+
+
+.gb-blockchain-main{
+    .gb-money-banner{
+        &:after{
+            background-image: -webkit-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+            background-image: -moz-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+            background-image: -o-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+            background-image: linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+        }
+        .gb-money-dtl{
+            .gb-blockchain-icon{
+                &:after{
+                    background: url('../../../assets/images/nav/chain-icon.svg') no-repeat;
+                }
+            }
+        }
+    } 
+    .gb-money-content-wrapper{
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar{
+                    background: $purple-color;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    width: auto !important;
+                    span{
+                        color: $purple-color;
+                    }
+                }
+            }
+        } 
+        .gb-blockchain-content-top{
+            width: 430px;
+            max-width: 100%;
+        }
+        .gb-blockchain-img1{
+            margin-top: -60px;
+            @media (max-width:991px){
+                margin-top: 0px;
+            }
+            img{
+                width: 377px;
+            }
+        }
+        .gb-blockchain-img2{
+            img{
+                width: 325px;
+            }
+        }
+        .gb-blockchain-img3{
+            img{
+                width: 435px;
+            }
+        }
+        .gb-blockchain-img4{
+            img{
+                width: 438px;
+            }
+        }
+        .gb-blockchain-img5{
+            img{
+                width: 437px;
+            }
+        }
+        .gb-blockchain-img6{
+            img{
+                width: 445px;
+            }
+        }
+        .gb-blockchain-img7{
+            img{
+                width: 324px;
+            }
+        }
+        .gb-blockchain-img8{
+            img{
+                width: 356px;
+            }
+        }
+        .gb-blockchain-img9{
+            img{
+                width: 440px;
+            }
+        }
+        .gb-blockchain-img10{
+            img{
+                width: 391px;
+            }
+        }
+        .gb-blockchain-img11{
+            img{
+                width: 390px;
+            }
+        }
+        .gb-blockchain-img12{
+            img{
+                width: 400px;
+            }
+        }
+        .gb-blockchain-img13{
+            img{
+                width: 440px;
+            }
+        }
+    }
+    .gb-quiz-content-blk{
+        background-image: -webkit-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+        background-image: -moz-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+        background-image: -o-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+        background-image: linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn{
+                    color: $purple-color;
+                    .gb-right-arrow{
+                        background: url('../../../assets/images/right-arrow-line-purple.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-summary-blk {
+        .gb-summary-title {
+            h3{
+                color: $purple-color;
+            }
+        }
+    } 
+}
+.gb-quiz-blockchain-modal{
+    .gb-quiz-modal {
+        .gb-quiz-body{
+            background-image: -webkit-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+            background-image: -moz-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+            background-image: -o-linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+            background-image: linear-gradient(150deg, #9a66dd 55%, #463486 100%);
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev{
+                    color: $purple-color;
+                    .gb-prev-icon{
+                        background: url('../../../assets/images/right-arrow-line-purple.svg') no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next{
+                    color: $purple-color;
+                    .gb-next-icon{
+                        background: url('../../../assets/images/right-arrow-line-purple.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

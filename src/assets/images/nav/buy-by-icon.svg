@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>buy-by-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="25%" y1="6.69230769%" x2="75%" y2="93.3076923%" id="linearGradient-1">
+            <stop stop-color="#5086FF" offset="0%"></stop>
+            <stop stop-color="#7AAFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="buy-by-icon" fill-rule="nonzero">
+            <circle id="Oval" fill="url(#linearGradient-1)" cx="26" cy="26" r="26"></circle>
+            <circle id="Oval" fill="#D6D6D6" transform="translate(34.979481, 17.357063) rotate(-82.390000) translate(-34.979481, -17.357063) " cx="34.9794808" cy="17.3570626" r="5.17"></circle>
+            <circle id="Oval" fill="#FFFFFF" transform="translate(34.615700, 16.916900) rotate(-82.519114) translate(-34.615700, -16.916900) " cx="34.6157" cy="16.9169" r="5.16223918"></circle>
+            <circle id="Oval" fill="#EDEDED" transform="translate(34.615700, 16.916900) rotate(-82.519114) translate(-34.615700, -16.916900) " cx="34.6157" cy="16.9169" r="3.99399549"></circle>
+            <g id="Group" opacity="0.5" transform="translate(21.000000, 14.000000)" fill="#FFFFFF">
+                <path d="M1,11.13 C-0.140468008,6.79732614 2.44732614,2.36046801 6.78,1.22 C11.1126739,0.0795319916 15.549532,2.66732614 16.69,7" id="Shape"></path>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(21.000000, 20.000000)" fill="#FFFFFF">
+                <path d="M17.28,0.85 C18.1606187,3.86714085 17.335357,7.12453697 15.1243896,9.35842408 C12.9134223,11.5923112 9.66471004,12.4511215 6.6386481,11.6016644 C3.61258616,10.7522072 1.28541435,8.32816976 0.56,5.27" id="Shape"></path>
+            </g>
+            <polygon id="Shape" fill="#FFFFFF" points="22.79 27.82 20.39 29.9 22.11 31.88 24.51 29.79 22.79 27.82"></polygon>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(17.306036, 34.339852) rotate(-41.000000) translate(-17.306036, -34.339852) " x="11.541036" y="32.1648519" width="11.53" height="4.35" rx="0.76"></rect>
+            <path d="M30,16.93 C33.0817768,16.9269899 35.7237482,19.1305665 36.2738991,22.1628415 C36.82405,25.1951164 35.1245851,28.1863673 32.2381737,29.2661759 C29.3517623,30.3459845 26.1062899,29.2046382 24.5311385,26.5558166 C22.9559871,23.9069951 23.5029444,20.510438 25.83,18.49 C26.9871122,17.4853513 28.467608,16.9314968 30,16.93 Z M30,14.65 C25.9312289,14.640673 22.4059851,17.4682374 21.5320573,21.4420562 C20.6581295,25.415875 22.6717975,29.4615646 26.3690634,31.1601554 C30.0663293,32.8587461 34.4475799,31.7509977 36.8932093,28.499247 C39.3388386,25.2474963 39.1876329,20.7309045 36.53,17.65 C34.8938158,15.7471183 32.5095925,14.651763 30,14.65 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

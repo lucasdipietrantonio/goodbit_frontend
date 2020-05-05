@@ -1,0 +1,760 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/gb_variables';
+@import '../../../assets/scss/mixin';
+.gb-buy-by-coin-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    overflow-y: scroll;
+    .gb-buy-by-coin-body {
+        background: $white;
+        min-height: 100vh;
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            .gb-buy-by-coin-close-btn {
+                position: absolute;
+                right: 12px;
+                top: 20px;
+                bottom: 0;
+                z-index: 3;
+                @media (max-width: 1199px) {
+                    top: 10px;
+                }
+                button {
+                    height: 50px;
+                    width: 50px;
+                    background-color: $white;
+                    background-image: url('../../../assets/images/quiz-close-icon.svg');
+                    background-repeat: no-repeat;
+                    background-size: 13px 13px;
+                    background-position: center center;
+                    border-radius: 50%;
+                    opacity: 1;
+                    padding: 0;
+                    border: none;
+                    box-shadow: 0px 4px 5px rgba(84, 90, 102, 0.25);
+                    position: sticky;
+                    right: 0;
+                    top: 0px;
+                    @include transition;
+                    &:hover{
+                        box-shadow: 0px 8px 10px rgba(84, 90, 102, 0.25);
+                    }
+                    @media (max-width: 991px) {
+                        height: 45px;
+                        width: 45px;
+                    }
+                    @media (max-width: 767px) {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    @media (max-width: 480px) {
+                        height: 33px;
+                        width: 33px;
+                    }
+                }
+            }
+        }
+    }
+    .gb-buy-by-coin-header {
+        padding: 20px 0px;
+        width: 100%;
+        img {
+            width: 250px;
+            @media (max-width: 1199px) {
+                width: 230px;
+            }
+            @media (max-width: 767px) {
+                width: 200px;
+            }
+            @media (max-width: 575px) {
+                width: 170px;
+            }
+        }
+    }
+    .gb-buy-by-coin-modal-body {
+        position: relative;
+        width: 100%;
+        margin: 70px 0 140px;
+        @media (max-width: 1199px) {
+            margin: 40px 0 100px;
+        }
+        @media (max-width: 991px) {
+            margin: 20px 0 100px;
+        }
+        @media (max-width: 575px) {
+            margin: 10px 0 70px;
+        }
+        .gb-buy-by-coin-swiper-container {
+            .gb-slider-header-text {
+                text-align: center;
+                h2 {
+                    font-size: 15px;
+                    line-height: 35px;
+                    font-weight: 600;
+                    color: $blue;
+                }
+                h1 {
+                    font-size: 40px;
+                    line-height: 45px;
+                    font-weight: 700;
+                    letter-spacing: -0.5px;
+                    color: #565656;
+                    max-width: 51%;
+                    margin: 0 auto;
+                    @media (max-width: 1199px) {
+                        font-size: 35px;
+                        line-height: 42px;
+                        max-width: 65%;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 30px;
+                        line-height: 40px;
+                        max-width: 71%;
+                    }
+                    @media (max-width:767px) {
+                        font-size: 27px;
+                        line-height: 37px;
+                        max-width: 71%;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                    @media (max-width: 480px) {
+                        font-size: 22px;
+                        line-height: 30px;
+                        max-width: 100%;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 600;
+                    letter-spacing: -0.5px;
+                    color: #565656;
+                    max-width: 70%;
+                    margin: 40px auto 80px;
+                    @media (max-width: 1199px) {
+                        margin: 30px auto 70px;
+                        font-size: 18px;
+                        max-width: 90%;
+                    }
+                    @media (max-width: 991px) {
+                        margin: 10px auto 50px;
+                        font-size: 16px;
+                    }
+                    @media (max-width:767px) {
+                        margin: 10px auto 50px;
+                        font-size: 15px;
+                        line-height: 27px;
+                        max-width: 100%;
+                    }
+                }
+            }
+            .gb-swipe-label {
+                display: none;
+                @media (max-width: 767px) {
+                    display: block;
+                    text-align: right;
+                    color: #565656;
+                    font-size: 15px;
+                    opacity: 0.5;
+                    margin-bottom: 25px;
+                }
+            }
+            .gb-mibile-scroll {
+                @media (max-width: 767px) {
+                    flex-wrap: nowrap;
+                    overflow-x: scroll;
+                    margin: 0;
+                }
+                .col-md-5 {
+                    @media (max-width: 767px) {
+                        flex: 0 0 80%;
+                        margin: 0 20px 0 0;
+                        padding: 0;
+                    }
+                }
+            }
+            .gb-buyby-coin-column{
+                &:nth-child(2n){
+                    margin-left: 0px !important;
+                }
+            }
+            .gb-buy-by-coin-product-box {
+                border: 1px solid #e6e7e8;
+                border-radius: 5px;
+                text-align: center;
+                transition: all 0.3s linear;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-between;
+                .gb-buy-by-coin-box-top{
+                    padding: 30px 30px 20px;
+                    position: relative;
+                    @media (max-width: 1199px) {
+                        padding: 20px 20px 15px;
+                    }
+                    @media (max-width: 991px) {
+                        padding: 15px 15px 10px;
+                    }
+                    input{
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        z-index: 1;
+                    }
+                }
+                &:hover {
+                    border: 1px solid $blue;
+                    -webkit-box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                    -moz-box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                    box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                }
+                &.gb-buy-by-coin-product-box-active{
+                    border: 1px solid $blue;
+                    -webkit-box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                    -moz-box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                    box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                }
+                .gb-coin-box-img{
+                    text-align: center;
+                    height: 150px;
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%; 
+                    }
+                }
+                .gb-rating-review {
+                    display: flex;
+                    align-items: center;
+                    margin: 20px 0 5px;
+                    text-align: left;
+                    ul {
+                        margin: 0 10px 0 0;
+                        @media (max-width: 480px) {
+                            margin: 0 7px 0 0;
+                        }
+                        li {
+                            padding: 0 2px;
+                            display: inline-block;
+                            @media (max-width: 480px) {
+                                padding: 0 1px;
+                            }
+                            &:last-child {
+                                padding: 0 0 0 2px;
+                            }
+                            &:first-child {
+                                padding: 0 2px 0 0;
+                            }
+                            a {
+                                display: block;
+                                .gb-star-icon {
+                                    background: url(../../../assets/images/Wallets/gray-star.svg) no-repeat;
+                                    background-size: contain;
+                                    width: 16px;
+                                    height: 16px;
+                                    display: block;
+                                    &.gb-chacked {
+                                        background: url(../../../assets/images/Wallets/blue-star.svg) no-repeat;
+                                        background-size: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    h4 {
+                        font-size: 15px;
+                        line-height: 26px;
+                        font-weight: 600;
+                        color: #6f777f;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                h5 {
+                    font-size: 20px;
+                    line-height: 35px;
+                    font-weight: 700;
+                    color: $text-b;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 30px;
+                    text-align: left;
+                    @media (max-width: 1199px) {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                    span {
+                        &.gb-green {
+                            color: $green-color;
+                        }
+                        &.gb-yellow {
+                            color: $bg-yellow;
+                        }
+                    }
+                }
+                .gb-product-detail {
+                    text-align: left;
+                    h2 {
+                        font-size: 15px;
+                        line-height: 35px;
+                        font-weight: 700;
+                        color: $text-b;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 1199px) {
+                            font-size: 14px;
+                            line-height: 30px;
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 13px;
+                            line-height: 20px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                    p {
+                        font-size: 17px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        color: $text-g;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 991px) {
+                            font-size: 15px;
+                            line-height: 24px;
+                        }
+                    }
+                    a {
+                        font-size: 17px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        color: $blue;
+                        letter-spacing: -0.5px;
+                        z-index: 10;
+                        position: relative;
+                        @media (max-width: 991px) {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+            .gb-buyby-read-moreblock{
+                text-align: left; 
+                transition: all 0.3s ease-in-out;
+                overflow: hidden; 
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $white;
+                display: none;
+                opacity: 0; 
+                overflow: auto;
+                width: calc(100% - 15px);
+                z-index: -1;
+                padding: 30px;
+                .gb-instruction-body-close-btn {
+                    position: fixed;
+                    right: 45px;
+                    top: 20px; 
+                    z-index: 3;
+                    height: 100%; 
+                    button {
+                        height: 50px;
+                        width: 50px;
+                        background-color: $white;
+                        background-image: url('../../../assets/images/quiz-close-icon.svg');
+                        background-repeat: no-repeat;
+                        background-size: 13px 13px;
+                        background-position: center center;
+                        border-radius: 50%;
+                        opacity: 1;
+                        padding: 0;
+                        border: none;
+                        box-shadow: 0px 4px 5px rgba(84, 90, 102, 0.25); 
+                        @include transition;
+                        &:hover{
+                            box-shadow: 0px 8px 10px rgba(84, 90, 102, 0.25);
+                        }
+                        @media (max-width: 991px) {
+                            height: 45px;
+                            width: 45px;
+                        }
+                        @media (max-width: 767px) {
+                            height: 40px;
+                            width: 40px;
+                        }
+                        @media (max-width: 480px) {
+                            height: 33px;
+                            width: 33px;
+                        }
+                    }
+                }
+                p{
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $text-b;
+                    font-weight: 500;
+                    br{
+                        display: none;
+                    }
+                }
+                img{
+                    height: auto;
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                ul{
+                    margin-bottom: 30px;
+                    padding-left: 20px;
+                    li{
+                        list-style: disc;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: $text-b;
+                        margin-bottom: 15px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                h1{
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    color: $text-b;
+                }
+                h2{
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    color: $text-b;
+                }
+                h3{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    color: $text-b;
+                }
+                h4{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    color: $text-b;
+                }
+            }
+            .gb-read-btn {
+                font-size: 15px;
+                font-weight: 600;
+                color: $blue;
+                background: transparent;
+                border: 0px;
+                padding: 0;
+                margin: 20px 0 0;
+                z-index: 10;
+                position: relative;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+                i {
+                    background: url(../../../assets/images/find-wallets/dropdown-arrow-blue.svg) no-repeat;
+                    background-size: contain;
+                    width: 12px;
+                    height: 10px;
+                    display: block;
+                    margin: 5px auto 0;
+                }
+            }
+            .gb-buy-by-coin-send-box {
+                text-align: center;
+                -webkit-box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                -moz-box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                box-shadow: 0px 9px 12px 0px rgba(56, 80, 114, 0.15);
+                border-radius: 5px;
+                background: $white;
+                padding: 30px;
+                margin-bottom: 20px;
+                @media (max-width: 1199px) {
+                    padding: 20px;
+                }
+                @media (max-width: 991px) {
+                    width: 95%;
+                    margin: 0 auto 20px;
+                }
+                .gb-send-coin {
+                    img {
+                        width: 10%;
+                    }
+                    h2 {
+                        font-size: 25px;
+                        line-height: 45px;
+                        color: #565656;
+                        letter-spacing: -0.5px;
+                        font-weight: 600;
+                        @media (max-width: 1199px) {
+                            font-size: 23px;
+                            line-height: 43px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 21px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+                .gb-send-from-to-blk {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 40px 0;
+                    @media (max-width: 1199px) {
+                        margin: 30px 0;
+                    }
+                    @media (max-width: 991px) {
+                        margin: 25px 0;
+                    }
+                    @media (max-width: 767px) {
+                        flex-direction: column;
+                    }
+                    .gb-send-from-blk {
+                        width: 40%;
+                        @media (max-width: 767px) {
+                            width: 100%;
+                        }
+                        img {
+                            width: 70%;
+                            @media (max-width: 767px) {
+                                width: 30%;
+                            }
+                        }
+                        p {
+                            font-size: 15px;
+                            line-height: 20px;
+                            font-weight: 500;
+                            color: #6f777f;
+                            letter-spacing: -0.5px;
+                            margin-top: 20px;
+                            word-break: break-all;
+                            @media (max-width: 1199px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .gb-coin-right-arrow {
+                    display: block;
+                    background: url(../../../assets/images/find-wallets/buy-by-coin/buy-by-coin-right-arrow.svg) no-repeat;
+                    background-size: contain;
+                    width: 27px;
+                    height: 20px;
+                    @media (max-width: 767px) {
+                        transform: rotate(90deg);
+                        margin: 40px 0;
+                    }
+                }
+                &.gb-buy-by-coin-change-box {
+                    .gb-send-coin {
+                        img {
+                            width: 26%;
+                        }
+                    }
+                    .gb-send-from-to-blk {
+                        margin: 70px 0 50px;
+                        img {
+                            width: 30%;
+                            @media (max-width: 991px) {
+                                width: 35%;
+                            }
+                            @media (max-width: 767px) {
+                                width: 12%;
+                            }
+                        }
+                    }
+                }
+            }
+            .gb-congrats-blockimg{
+                margin-top: 50px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .gb-buy-by-coin-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $white;
+        z-index: 1;
+        .gb-buy-by-coin-slider {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 30% 30px;
+            @media (max-width: 1199px) {
+                padding: 20px 25% 20px;
+            }
+            @media (max-width: 767px) {
+                padding: 15px 20px;
+            }
+            .gb-buy-by-coin-swiper-button-next {
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+                width: 120px;
+                border-radius: 50px;
+                padding: 0 20px;
+                background: $blue;
+                height: 40px;
+                line-height: 42px;
+                text-align: center;
+                color: $white;
+                font-size: 15px;
+                font-weight: 600;
+                margin: 0px;
+                @include transition;
+                &:hover{
+                    opacity: 0.75;
+                }
+                @media (max-width: 991px) {
+                    height: 37px;
+                    line-height: 37px;
+                    width: 105px;
+                    padding: 0 16px;
+                }
+                @media (max-width: 575px) {
+                    height: 34px;
+                    line-height: 34px;
+                    width: 95px;
+                }
+                .gb-next-icon {
+                    background: url('../../../assets/images/right-arrow-line-white.svg') no-repeat;
+                    width: 13px;
+                    height: 10px;
+                    display: inline-block;
+                    background-size: 100% !important;
+                    margin-left: 25px;
+                    @media (max-width: 991px) {
+                        margin-left: 15px;
+                    }
+                    @media (max-width: 767px) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .gb-buy-by-coin-swiper-button-prev {
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+                width: 120px;
+                border-radius: 50px;
+                padding: 0 20px;
+                background: #565656;
+                height: 40px;
+                line-height: 42px;
+                text-align: center;
+                color: $white;
+                font-size: 15px;
+                font-weight: 600;
+                margin: 0px;
+                @include transition;
+                &:hover{
+                    opacity: 0.75;
+                }
+                @media (max-width: 991px) {
+                    height: 37px;
+                    line-height: 37px;
+                    width: 105px;
+                    padding: 0 16px;
+                }
+                @media (max-width: 575px) {
+                    height: 34px;
+                    line-height: 34px;
+                    width: 95px;
+                }
+                .gb-prev-icon {
+                    background: url('../../../assets/images/right-arrow-line-white.svg') no-repeat;
+                    width: 13px;
+                    height: 10px;
+                    display: inline-block;
+                    background-size: 100% !important;
+                    margin-right: 25px;
+                    transform: rotate(180deg);
+                    @media (max-width: 991px) {
+                        margin-right: 15px;
+                    }
+                    @media (max-width: 767px) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gb-buybycoin-main-body {
+    overflow: hidden;
+    .gb-buy-by-coin-modal {
+        opacity: 1;
+        z-index: 1;
+    }
+    .gb-instruction-body{
+        overflow: hidden; 
+        .gb-buy-by-coin-body{
+            .container{
+                .gb-buy-by-coin-close-btn{
+                    display: none;
+                }
+            }
+        }
+        .gb-buy-by-coin-modal-body{
+            .gb-buy-by-coin-swiper-container{
+                .gb-buyby-read-moreblock-active{  
+                    opacity: 1;
+                    display: block;
+                    z-index: 100;
+                }
+            }
+        }  
+        .swiper-wrapper{
+            transform: inherit !important;
+        }
+        .gb-buy-by-coin-footer{
+            display: none;
+        }
+    }
+}

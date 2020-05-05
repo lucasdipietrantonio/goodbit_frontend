@@ -1,0 +1,307 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/gb_variables';
+@import '../../../assets/scss/mixin';
+
+.gb-buy-detail-main{
+    overflow: visible;
+    .gb-wallet-banner-box{
+        background-image: url('../../../assets/images/crypto-bg-left.svg'), url('../../../assets/images/crypto-bg-right.svg');
+        background-repeat: no-repeat;
+        background-position: left top 110px, right top 110px;
+        background-size: 445px auto, 405px auto;
+        position: relative;
+        @media (max-width:1199px){
+            background-size: 35%;
+        }
+        @media (max-width: 767px) {
+            background-image: url('../../../assets/images/crypto-bg-top-mobile.png');
+            background-repeat: no-repeat;
+            background-position: top 10px center; 
+            background-size: auto;
+        }
+        &:after{
+            background: url('../../../assets/images/crypto-bg-bottom-mobile.png') no-repeat;
+            width: 300px;
+            max-width: 100%;
+            content: '';
+            height: 111px;
+            background-size: 100%;
+            position: absolute;
+            bottom: -90px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-size: 100%;
+            display: none;
+            @media (max-width:767px){
+                display: block;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.gb-buy-crypto-content{
+    padding: 90px 0px 120px;
+    @media (max-width:767px){
+        padding: 70px 0 60px;
+    }
+    .gb-crypto-menu-block{
+        padding-top: 25px;
+        height: 100%;
+        position: relative;
+        .gb-sticky-crypto-menu{
+            position: sticky;
+            top: 25px;
+            @media (max-width:767px){
+                float: right;
+                text-align: right;
+                position: relative;
+            }
+            h3{
+                color: #b7bbbf;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                @media (max-width:767px){
+                    font-size: 14px;
+                }
+            }
+        }
+        ul{
+            li{
+                margin-bottom: 7px;
+                @media (max-width:767px){
+                    margin-bottom: 1px;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+            a{
+                font-size: 15px;
+                letter-spacing: -0.37px;
+                color: $text-b; 
+                &:hover{
+                    opacity: 0.75;
+                }
+                @media (max-width:767px){
+                    font-size: 13px;
+                }
+            }
+            .active{
+                a{
+                    color: $blue;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .gb-crypto-buydetail{
+        padding-top: 25px;
+        .gb-crypto-buy-block-main{
+            .gb-crypto-detail-row{
+                margin-bottom: 40px;
+                @media (max-width:767px){
+                    margin-bottom: 25px;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                h3{
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.5px;
+                    font-weight: 600;
+                    color: $text-b;
+                    margin-bottom: 40px;
+                    @media (max-width:767px){
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-bottom: 25px;
+                    }
+                }
+                h4{
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.5px;
+                    font-weight: 700;
+                    color: $text-b;
+                    margin-bottom: 40px;
+                    @media (max-width:767px){
+                        font-size: 15px;
+                        margin-bottom: 25px;
+                    }
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.5px;
+                    font-weight: 500;
+                    color: $text-b;
+                    margin-bottom: 40px;
+                    @media (max-width:767px){
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-bottom: 25px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                    label{
+                        font-weight: 700;
+                        margin-right: 5px;
+                    }
+                    .gb-text-hover{
+                        color: $blue;
+                        cursor: help;
+                    }
+                    a{
+                        color: $blue;
+                    }
+                }
+                .gb-crypto-detail-list{
+                    margin-bottom: 40px;
+                    @media (max-width:767px){
+                        margin-bottom: 25px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .gb-crypto-bottom{
+            ul{
+                margin: 50px 0px;
+                @media (max-width:767px){
+                    margin: 30px 0px;
+                }
+                li{ 
+                    display: inline-block;
+                    margin-right: 13px;
+                    @media (max-width:767px){
+                        margin-right: 10px;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    i{
+                        height: 40px;
+                        width: 40px;
+                        display: block;
+                        background-size: 100% !important;
+                        -webkit-transition: all 0.1s ease-in-out;
+                        -moz-transition: all 0.1s ease-in-out;
+                        -o-transition: all 0.1s ease-in-out;
+                        transition: all 0.1s ease-in-out;
+                        @media (max-width:767px){
+                            height: 32px;
+                            width: 32px;
+                        }
+                    }
+                    .gb-fb-icon{
+                        background: url('../../../assets/images/social/fb-icon.svg') no-repeat;
+                    }
+                    .gb-twitter-icon{
+                        background: url('../../../assets/images/social/twitter-icon.svg') no-repeat;
+                    }
+                    .gb-linkedin-icon{
+                        background: url('../../../assets/images/social/linkedin-icon.svg') no-repeat;
+                    }
+                    .gb-gplus-icon{
+                        background: url('../../../assets/images/social/gplus-icon.svg') no-repeat;
+                    }
+                    a{
+                        display: inline-block;
+                        &:hover{
+                            .gb-fb-icon{
+                                background: url('../../../assets/images/social/fb-icon-hover.svg') no-repeat;
+                            }
+                            .gb-twitter-icon{
+                                background: url('../../../assets/images/social/twitter-icon-hover.svg') no-repeat;
+                            }
+                            .gb-linkedin-icon{
+                                background: url('../../../assets/images/social/linkedin-icon-hover.svg') no-repeat;
+                            }
+                            .gb-gplus-icon{
+                                background: url('../../../assets/images/social/gplus-icon-hover.svg') no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            h3{
+                font-size: 20px;
+                color: #6f777f;
+                font-weight: 700;
+                margin-bottom: 40px;
+                @media (max-width:767px){
+                    font-size: 15px;
+                    margin-bottom: 25px;
+                }
+            }
+            .gb-next-post-link{  
+                display: flex; 
+                align-items: center;
+                .gb-howto-blk{
+                    width: 95px;
+                    height: 95px;
+                    background: $blue;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 15px;
+                    flex: 0 0 95px;
+                    @media (max-width:767px){
+                        width: 50px;
+                        height: 50px;
+                        flex:  0 0 50px;
+                    }
+                    label{
+                        font-size: 25px;
+                        line-height: 20px;
+                        letter-spacing: -0.625px;
+                        color: $white;
+                        font-weight: 700;
+                        margin-bottom: 0px;
+                        @media (max-width:767px){
+                            font-size: 12px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+                .gb-next-post-dtl{
+                    padding-left: 20px;
+                    p{
+                        font-size: 25px;
+                        color: $text-b;
+                        letter-spacing: -0.625px;
+                        line-height: 32px;
+                        font-weight: 500;
+                        @media (max-width:767px){
+                            font-size: 15px; 
+                            line-height: 15px;
+                        }
+                    }
+                    span{
+                        font-size: 13.5px;
+                        font-weight: bold;
+                        color:#bbbbbc;
+                        @media (max-width:767px){
+                            font-size: 10px; 
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

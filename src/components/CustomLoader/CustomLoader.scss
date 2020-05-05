@@ -1,0 +1,49 @@
+@mixin size768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin size450 {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+.customloader-enter {
+    opacity: 0.01;
+  }
+
+  .customloader-enter.customloader-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .customloader-leave {
+    opacity: 1;
+  }
+
+  .customloader-leave.customloader-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+.loader-img {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1111;
+    img {
+        height: 200px;
+        width: auto;
+        @include size768 {
+            height: 100px;
+        }
+        @include size450 {
+            height: 70px;
+        }
+    }
+}

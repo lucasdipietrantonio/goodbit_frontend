@@ -1,0 +1,193 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/gb_variables';
+@import '../../../../assets/scss/mixin';
+
+.gb-mining-main {
+    .gb-money-banner {
+        &:after {
+            background: #dc7518;
+            height: calc(100% - 100px);
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+        }
+        .gb-money-dtl {
+            padding-bottom: 130px;
+            @media (max-width: 767px) {
+                padding-bottom: 0px;
+            }
+            .gb-basic-btn {
+                background: rgba(255, 255, 255, 0.35);
+            }
+            .gb-money-banner-dtl {
+                width: 100%;
+                p {
+                    margin-bottom: 35px;
+                    @media (max-width: 1199px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (max-width: 991px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .gb-dephth-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .gb-money-video {
+                img {
+                    box-shadow: none;
+                    border-radius: 0px;
+                }
+            }
+            .gb-segment-blk {
+                width: 100%;
+                .gb-next-menublk {
+                    .gb-next-menubtn {
+                        min-width: 115px;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-content-blk {
+        background: url(../../../../assets/images/in-depth/minning-left.svg), url(../../../../assets/images/in-depth/minning-right.svg);
+        background-repeat: no-repeat;
+        background-position: left 35px center , right 35px center;
+        background-color:#dc7518;
+        background-size: 322px, 190px;
+        // background-size: 36%;
+        @media (max-width: 1199px) { 
+            background-size: 200px, 120px;
+        } 
+        @media (max-width: 767px) { 
+            background-size: 20%, 12%;
+            background-position: left 25px center , right 25px center;
+        } 
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn {
+                    color: #dc7518;
+                    .gb-right-arrow {
+                        background: url(../../../../assets/images/right-arrow-line-mining.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-next-pageblk {
+        .gb-next-page-menu {
+            span {
+                color: $dark-green-color;
+            }
+            .gb-letsgo-btnblk {
+                .gb-letsgobtn {
+                    background: $dark-green-color;
+                }
+            }
+        }
+    }
+    .gb-money-content-wrapper { 
+        padding: 0px;
+        .gb-money-content-dtl{
+            .gb-money-content-desc{
+                > *{
+                    &:first-child{
+                        margin-bottom: 30px !important;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+        h2{
+            color: #dc7518;
+            font-weight: 700;
+        }
+        .gb-mining-img1{
+            margin: 30px 0 50px; 
+            @media (max-width:1199px){
+                margin: 10px 0px 30px;
+            }
+            @media (max-width:767px){
+                margin:0px;
+            }
+            img{
+                width: 670px;
+            }
+        }
+        .gb-mining-img2{
+            margin-bottom: 0px;
+            img{
+                width: 440px;
+            }
+        }
+        .gb-mining-img3{
+            @media (max-width:991px){
+                margin: 0px;
+            }
+            img{
+                width: 440px;
+            }
+        }
+        .gb-history-img3{
+            margin: 20px 0px;
+            @media (max-width:991px){
+                margin:45px 0px;
+            }
+            @media (max-width:1199px){
+                margin:60px 0px;
+            }
+            img{
+                width: 440px;
+            }
+        }
+        .gb-content-row{
+            &:last-child{
+                border: none;
+            }
+            .row{
+                padding: 0px 0px 30px;
+            }
+        }
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar {
+                    background: #dc7518;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    span {
+                        color: #dc7518;
+                    }
+                }
+            }
+        }
+    }
+    .gb-quiz-modal {
+        .gb-quiz-body {
+            background: #dc7518;
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev {
+                    color: #dc7518;
+                    .gb-prev-icon {
+                        background: url(../../../../assets/images/right-arrow-line-mining.svg) no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next {
+                    color: #dc7518;
+                    .gb-next-icon {
+                        background: url(../../../../assets/images/right-arrow-line-mining.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

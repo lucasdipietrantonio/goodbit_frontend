@@ -1,0 +1,820 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/gb_variables';
+@import '../../assets/scss/mixin';
+.gb-ask-detail-main {
+    background: -webkit-linear-gradient(60deg, rgba(80, 135, 255, 1) 0%, rgba(133, 199, 230, 1) 100%);
+    background: -o-linear-gradient(60deg, rgba(80, 135, 255, 1) 0%, rgba(133, 199, 230, 1) 100%);
+    background: -ms-linear-gradient(60deg, rgba(80, 135, 255, 1) 0%, rgba(133, 199, 230, 1) 100%);
+    background: linear-gradient(60deg, rgba(80, 135, 255, 1) 0%, rgba(133, 199, 230, 1) 100%);
+    padding: 110px 0;
+    position: relative;
+    @media (max-width: 1199px) {
+        padding: 90px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 60px 0;
+    }
+    &:before {
+        background-image: url(../../assets/images/askanything/ask-left.svg), url(../../assets/images/askanything/ask-right.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center, right center;
+        background-size: 30%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @media (max-width: 1199px) {
+            background-size: 40%;
+        }
+        @media (max-width: 767px) {
+            background-image: url(../../assets/images/askanything/ask-left-mobile.svg), url(../../assets/images/askanything/ask-right-mobile.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left center, right center;
+            background-size: 22%, 15%;
+        }
+        @media (max-width: 480px) {
+            background-size: 34%, 21%;
+        }
+    }
+    h1 {
+        color: $white;
+        font-size: 40px;
+        line-height: 70px;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+        @media (max-width: 767px) {
+            font-size: 37px;
+            line-height: 60px;
+        }
+    }
+    p {
+        color: $white;
+        font-size: 25px;
+        line-height: 35px;
+        letter-spacing: -0.5px;
+        font-weight: 500;
+        max-width: 540px;
+        margin: 0 auto;
+        @media (max-width: 1199px) {
+            font-size: 24px;
+            line-height: 34px;
+            max-width: 480px;
+        }
+        @media (max-width: 991px) {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        @media (max-width: 767px) {
+            font-size: 19px;
+            line-height: 29px;
+            max-width: 400px;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.gb-faq-main {
+    padding: 100px 0 0;
+    @media (max-width: 991px) {
+        padding: 80px 0 0;
+    }
+    .col-md-7 {
+        @media (max-width: 767px) {
+            order: 2;
+        }
+    }
+    .gb-faq-left {
+        border-right: 2px solid #f3f3f4;
+        @media (max-width: 767px) {
+            border-right: 0px;
+        }
+        h2 {
+            color: $text-b;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: -0.5px;
+            font-weight: 600;
+            margin-bottom: 45px;
+            @media (max-width: 1199px) {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 40px;
+            }
+            @media (max-width: 991px) {
+                font-size: 19px;
+                line-height: 23px;
+                margin: 60px 0 18px;
+            }
+            &.second-title {
+                margin: 80px 0 20px;
+                @media (max-width: 1199px) {
+                    margin: 60px 0 18px;
+                }
+                @media (max-width: 991px) {
+                    margin: 50px 0 18px;
+                }
+                @media (max-width: 767px) {
+                    margin: 60px 0 18px;
+                }
+            }
+        }
+    }
+    .gb-scroll-blk {
+        max-height: 600px;
+        overflow-y: auto;
+        padding-top: 13px;
+        @media (max-width: 1199px) {
+            max-height: 500px;
+        }
+        @media (max-width: 991px) {
+            max-height: 420px;
+        }
+        @media (max-width: 767px) {
+            padding: 10px 10px 0 0;
+        }
+    }
+    .gb-show-more-btn {
+        background: $blue;
+        color: $white;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 40px;
+        border: 0px;
+        padding: 8px 20px 8px 15px;
+        margin: 20px 0 0;
+        @include transition;
+        &:hover{
+            opacity: 0.75;
+        }
+        @media (max-width: 1199px) {
+            margin: 20px 0 0;
+        }
+        @media (max-width: 991px) {
+            font-size: 14px;
+            margin: 10px 0 0;
+        }
+        i {
+            background: url(../../assets/images/askanything/down-arrow-more-white.svg) no-repeat;
+            background-size: contain;
+            width: 10px;
+            height: 14px;
+            display: inline-block;
+            margin-left: 14px;
+            vertical-align: middle;
+            @media (max-width: 991px) {
+                width: 8px;
+                height: 12px;
+                margin-left: 11px;
+            }
+        }
+    }
+    .gb-chat-main {
+        margin-right: 20px;
+        position: relative;
+        @media (max-width: 991px) {
+            margin-right: 15px;
+        }
+        @media (max-width: 767px) {
+            margin-right: 0;
+        }
+        .gb-chat-opacity {
+            p {
+                opacity: 0.5;
+            }
+        }
+        > div{
+            clear: both;
+        }
+        h3 {
+            font-size: 15px;
+            line-height: 35px;
+            font-weight: 600;
+            color: $blue;
+            // position: absolute;
+            // top: -20px;
+            padding-left: 45px;
+            @media (max-width: 1199px) {
+                font-size: 14px;
+                line-height: 30px;
+                // top: -16px;
+                padding-left: 35px;
+            }
+            @media (max-width: 991px) {
+                font-size: 13px;
+                line-height: 24px;
+                // top: -24px;
+            }
+        }
+        .gb-chat {
+            margin: 15px 0;
+            float: left;
+            cursor: pointer;
+            @media (max-width: 1199px) {
+                margin: 15px 0;
+            }
+            @media (max-width: 991px) {
+                float: none;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                color: $white;
+                letter-spacing: -0.5px;
+                background: $blue;
+                padding: 26px;
+                border-radius: 35px;
+                // width: 400px;
+                width: 85%;
+                position: relative;
+                margin-left: 14px;
+                @media (max-width: 1440px) {
+                    // width: 360px;
+                }
+                @media (max-width: 1199px) {
+                    // width: 320px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    padding: 22px 25px;
+                    border-radius: 30px;
+                }
+                @media (max-width: 991px) {
+                    margin-left: 12px;
+                    width: calc(100% - 12px);
+                }
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+                &:before {
+                    background: url(../../assets/images/askanything/blue-chat.svg) no-repeat;
+                    background-size: contain;
+                    width: 28px;
+                    height: 47px;
+                    content: "";
+                    position: absolute;
+                    bottom: 4px;
+                    left: -16px;
+                    @media (max-width: 1199px) {
+                        width: 26px;
+                        height: 31px;
+                        bottom: 13px;
+                        left: -15px;
+                    }
+                    @media (max-width: 991px) {
+                        width: 22px;
+                        height: 27px;
+                        bottom: 11px;
+                        left: -13px;
+                    }
+                }
+            }
+            .gb-like-chat {
+                display: flex;
+                align-items: center;
+                @media (max-width: 991px) {
+                    display: block;
+                }
+                .gb-like-blk {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $text-b;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 10px;
+                    @media (max-width: 1199px) {
+                        font-size: 14px;
+                        margin-left: 9px;
+                    }
+                    @media (max-width: 991px) {
+                        display: block;
+                        margin-left: 34px;
+                        margin-top: 7px;
+                    }
+                    i {
+                        background: url(../../assets/images/askanything/like.svg) no-repeat;
+                        background-size: contain;
+                        width: 22px;
+                        height: 22px;
+                        display: block;
+                        margin-top: 5px;
+                        @media (max-width: 1199px) {
+                            width: 19px;
+                            height: 19px;
+                            margin-top: 3px;
+                        }
+                        @media (max-width: 991px) {
+                            margin-top: 0;
+                            float: left;
+                            vertical-align: middle;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+        .gb-chat-receive {
+            float: right;
+            @media (max-width: 991px) {
+                float: none;
+            }
+            p {
+                margin-left: 0px;
+                margin-right: 14px;
+                float: right;
+                background: #78d353 !important;
+                @media (max-width: 991px) {
+                    margin-right: 0px;
+                    width: calc(100% - 12px);
+                }
+                &:before {
+                    background: url(../../assets/images/askanything/blue-chat-receive.svg) no-repeat;
+                    background-size: contain;
+                    left: calc(100% - 12px);
+                    bottom: 4px;
+                    @media (max-width: 1199px) {
+                        left: calc(100% - 11px);
+                        bottom: 13px;
+                    }
+                }
+            }
+        }
+        .gb-close-chat {
+            display: flex;
+            align-items: flex-start;
+            .close-icon {
+                background: url(../../assets/images/askanything/close.svg) no-repeat;
+                background-size: contain;
+                width: 31px;
+                height: 31px;
+                display: block;
+                margin-left: 12px;
+                @media (max-width: 1199px) {
+                    margin-left: 9px;
+                }
+                @media (max-width: 991px) {
+                    display: none;
+                }
+            }
+        }
+        .gb-close-chat-mobile {
+            .close-icon {
+                display: none;
+                @media (max-width: 991px) {
+                    display: block;
+                    background: url(../../assets/images/askanything/close.svg) no-repeat;
+                    background-size: contain;
+                    width: 31px;
+                    height: 31px;
+                    float: right;
+                    margin-top: 10px;
+                }
+            }
+        }
+        &.gb-chat-comm-main {
+            p {
+                background: $purple-chat;
+                &:before {
+                    background: url(../../assets/images/askanything/purple-chat.svg) no-repeat;
+                    background-size: contain;
+                }
+            }
+            .gb-chat-receive {
+                p {
+                    &:before {
+                        background: url(../../assets/images/askanything/blue-chat-receive.svg) no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+            h3 {
+                color: $purple-chat;
+            }
+        }
+        &.gb-chat-main-search {
+            h3 {
+                top: -24px;
+                left: 30px;
+                font-size: 14px;
+                @media (max-width: 1199px) {
+                    top: -19px;
+                }
+                @media (max-width: 991px) {
+                    top: -23px;
+                    font-size: 13px;
+                }
+                @media (max-width:767px){
+                    position: relative;
+                    top: auto;
+                }
+            }
+            .gb-chat {
+                margin: 10px 0;
+                &:first-child{
+                    margin-top: 0px;
+                }
+            }
+            p {
+                width: 220px;
+                padding: 17px 21px;
+                margin-left: 12px;
+                @media (max-width: 1199px) {
+                    width: 200px;
+                }
+                @media (max-width: 991px) {
+                    width: calc(100% - 12px);
+                    padding: 14px 20px;
+                }
+                &:before {
+                    width: 24px;
+                    height: 29px;
+                    bottom: 10px;
+                    left: -13px;
+                    @media (max-width: 1199px) {
+                        width: 20px;
+                        height: 24px;
+                        left: -11px;
+                    }
+                    @media (max-width: 991px) {
+                        width: 17px;
+                        height: 23px;
+                        left: -9px;
+                    }
+                }
+            }
+            .gb-chat-receive {
+                p {
+                    margin-right: 12px;
+                    margin-left: 0;
+                    &:before {
+                        left: calc(100% - 11px);
+                        bottom: 10px;
+                        @media (max-width: 1199px) {
+                            left: calc(100% - 8px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .gb-ask-dropdown {
+        button {
+            text-align: left;
+            background-color: $bg-gray !important;
+            border: 0px !important;
+            color: $text-b !important;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 6px 28px 6px 10px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            @media (max-width: 991px) {
+                font-size: 13px;
+            }
+            &:after {
+                display: none;
+            }
+            &:before {
+                background: url('../../assets/images/askanything/down-arrow.svg') no-repeat;
+                width: 11px;
+                height: 7px;
+                display: block;
+                right: 11px;
+                content: '';
+                top: 0px;
+                bottom: 0px;
+                margin: auto 0;
+                position: absolute;
+                transition: all 0.3s ease-in-out;
+                @media (max-width: 991px) {
+                    width: 10px;
+                    height: 6px;
+                }
+            }
+            &:active,
+            &:focus,
+            &:hover {
+                background: $bg-gray;
+                border: 0px;
+                box-shadow: none !important;
+            }
+        }
+        &.show {
+            button {
+                &:before {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+        .dropdown-menu {
+            background: $bg-gray;
+            border: 0px; 
+            min-width: 95px;
+            @media (max-width:991px){
+                min-width: 87px;
+            }
+            ul {
+                li {
+                    a {
+                        color: $text-b;
+                        font-size: 15px;
+                        font-weight: 600;
+                        padding: 5px 12px;
+                        display: block;
+                        @media (max-width: 991px) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &.gb-alltopics-dropdown {
+            margin-left: 15px;
+        }
+    }
+    .gb-faq-right {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 100px;
+        @media (max-width: 1199px) {
+            margin-left: 50px;
+        }
+        @media (max-width: 991px) {
+            margin-left: 0px;
+        }
+        .gb-faq-right-blk {
+            width: 100%;
+        }
+        form {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            .form-group {
+                position: relative;
+                width: 100%;
+                input {
+                    border: 0px;
+                    border-bottom: 1px solid #f3f3f4;
+                    padding: 0 0px 14px 40px;
+                    border-radius: 0px;
+                    line-height: 35px;
+                    font-size: 25px;
+                    letter-spacing: -0.5px;
+                    @media (max-width: 1199px) {
+                        padding: 0 0px 10px 33px;
+                        line-height: 30px;
+                        font-size: 23px;
+                    }
+                    @media (max-width: 991px) {
+                        line-height: 30px;
+                        font-size: 21px;
+                    }
+                    &:focus,
+                    &:hover,
+                    &:active {
+                        box-shadow: none;
+                    }
+                }
+                 ::-webkit-input-placeholder {
+                    opacity: 0.5;
+                }
+                 ::-moz-placeholder {
+                    opacity: 0.5;
+                }
+                 :-ms-input-placeholder {
+                    opacity: 0.5;
+                }
+                 :-moz-placeholder {
+                    opacity: 0.5;
+                }
+                &:before {
+                    position: absolute;
+                    background: url(../../assets/images/askanything/search.svg) no-repeat;
+                    background-size: contain;
+                    width: 16px;
+                    height: 16px;
+                    content: "";
+                    top: 4px;
+                    left: 0;
+                    @media (max-width: 1199px) {
+                        width: 15px;
+                        height: 15px;
+                        top: 7px;
+                    }
+                    @media (max-width: 991px) {
+                        width: 14px;
+                        height: 14px;
+                        top: 8px;
+                    }
+                }
+            }
+        }
+        .gb-line-blk {
+            border-bottom: 1px solid #f3f3f4;
+            margin: 90px 0;
+            @media (max-width: 1199px) {
+                margin: 80px 0;
+            }
+            @media (max-width: 991px) {
+                margin: 60px 0;
+            }
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+        .gb-dont-see-blk {
+            padding: 60px 0 0;
+            border-top: 1px solid #e8e9e9;
+            margin-top: 30px;
+            @media (max-width: 991px) {
+                padding: 50px 0;
+            }
+            @media (max-width: 767px) {
+                display: none;
+            }
+            h2 {
+                font-size: 20px;
+                line-height: 30px;
+                color: $text-b;
+                @media (max-width: 1199px) {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            button {
+                font-size: 20px;
+                line-height: 30px;
+                background: transparent;
+                border: none;
+                font-weight: 600;
+                color: $blue;
+                border-bottom: 1px solid $blue;
+                @media (max-width: 1199px) {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                i {
+                    background: url(../../assets/images/askanything/down-arrow-more.svg) no-repeat;
+                    background-size: contain;
+                    width: 10px;
+                    height: 14px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    @media (max-width: 1199px) {
+                        width: 9px;
+                        height: 13px;
+                    }
+                    @media (max-width: 991px) {
+                        width: 8px;
+                        height: 12px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gb-ask-main {
+    .gb-ask-form-blk {
+        padding: 120px 0;
+        margin: 40px 0 0;
+        border-top: 1px solid #f3f3f4;
+        @media (max-width: 1199px) {
+            padding: 90px 0;
+            margin: 30px 0 0;
+        }
+        @media (max-width: 991px) {
+            padding: 70px 0 60px;
+            margin: 50px 0 0;
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: $text-b;
+            margin-bottom: 55px;
+            @media (max-width: 1199px) {
+                font-size: 35px;
+                line-height: 45px;
+                margin-bottom: 45px;
+            }
+            @media (max-width: 991px) {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 35px;
+            }
+            span {
+                font-weight: 400;
+                display: block;
+            }
+        }
+        form {
+            .form-group {
+                label {
+                    font-size: 21px;
+                    line-height: 35px;
+                    color: #6f777f;
+                    @media (max-width: 1199px) {
+                        font-size: 19px;
+                        line-height: 30px;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 17px;
+                        line-height: 23px;
+                    }
+                    span {
+                        color: #907fd7;
+                    }
+                }
+                input,
+                textarea {
+                    background-color: $bg-gray;
+                    border: 0px;
+                    color: $text-b;
+                    font-weight: 600;
+                    font-size: 15px;
+                    border-radius: 5px;
+                    padding: 20px;
+                    @media (max-width: 1199px) {
+                        padding: 16px;
+                    }
+                    @media (max-width: 991px) {
+                        padding: 12px;
+                    }
+                    &:focus,
+                    &:hover,
+                    &:active {
+                        box-shadow: none;
+                    }
+                }
+                 ::-webkit-input-placeholder {
+                    opacity: 0.5;
+                }
+                 ::-moz-placeholder {
+                    opacity: 0.5;
+                }
+                 :-ms-input-placeholder {
+                    opacity: 0.5;
+                }
+                 :-moz-placeholder {
+                    opacity: 0.5;
+                }
+                textarea {
+                    height: 100px;
+                    border-radius: 5px 5px 0 0;
+                }
+                h2 {
+                    color: #907fd7;
+                    font-size: 15px;
+                    line-height: 35px;
+                    letter-spacing: -0.5px;
+                    font-weight: 600;
+                    width: 100%;
+                    background-color: $bg-gray;
+                    border-radius: 0 0 5px 5px;
+                    padding: 8px 20px 15px;
+                    @media (max-width: 1199px) {
+                        padding: 8px 16px 12px;
+                    }
+                    @media (max-width: 991px) {
+                        padding: 8px 12px 10px;
+                    }
+                }
+                .gb-ask-submit {
+                    background: $blue;
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 40px;
+                    border: 0px;
+                    padding: 6px 18px;
+                    @include transition;
+                    &:hover{
+                        opacity: 0.75;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

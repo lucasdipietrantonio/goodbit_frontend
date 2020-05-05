@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="230px" viewBox="0 0 17 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>about-main-top-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3F73EE" offset="0%"></stop>
+            <stop stop-color="#A0BDEE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="about-main-top-mobile">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="7" y="15" width="3" height="215"></rect>
+            <path d="M8.39023062,2 C11.6431878,2 14.2802306,4.63704282 14.2802306,7.89 C14.2802306,11.1429572 11.6431878,13.78 8.39023062,13.78 C5.13727344,13.78 2.50023062,11.1429572 2.50023062,7.89 C2.50023062,4.63704282 5.13727344,2 8.39023062,2 Z M8.39023062,0 C5.19902351,-1.19769394e-14 2.3220432,1.92233678 1.10082111,4.87062772 C-0.120400978,7.81891865 0.554633932,11.2125483 2.81115812,13.4690725 C5.06768231,15.7255967 8.46131197,16.4006316 11.4096029,15.1794095 C14.3578938,13.9581874 16.2802306,11.0812071 16.2802306,7.89 C16.2802306,5.7974419 15.4489651,3.79058952 13.9693031,2.3109275 C12.4896411,0.83126547 10.4827887,-3.15956981e-16 8.39023062,0 Z" id="Shape" fill="#3C6FE8" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

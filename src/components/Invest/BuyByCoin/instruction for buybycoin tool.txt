@@ -1,0 +1,6 @@
+==================================================Buy By Coin==================================================
+=> Instruction for adding step
+[1]. Please enter <selected_coin> where you want to selected coin in description.
+[2]. The name in buybycoin tool step must be step-1 for first step step-2 for second step and so on.
+if step-1 not availble then please start name step-2 (it means if step skipped then also skip name)
+===============================================================================================================

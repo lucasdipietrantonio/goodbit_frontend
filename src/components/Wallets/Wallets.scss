@@ -1,0 +1,534 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/gb_variables';
+@import '../../assets/scss/mixin';
+.gb-wallets-detail-main {
+    background-color: $bg-gray;
+    overflow: hidden; 
+    .gb-wallet-banner-box{
+        background-image: url(../../assets/images/Wallets/wallets-left.svg), url(../../assets/images/Wallets/wallets-right.svg);
+        background-repeat: no-repeat;
+        background-position: left center, right center;
+        padding: 120px 0;
+        background-size: 17%;
+        @media (max-width: 1199px) {
+            padding: 100px 0;
+            background-size: 18%;
+        }
+        @media (max-width: 991px) {
+            padding: 80px 0;
+        }
+        @media (max-width: 767px) {
+            background-image: url(../../assets/images/Wallets/wallets-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: top 10px center;
+            background-size: 74%;
+        }
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $blue;
+        letter-spacing: -0.5px;
+        @media (max-width: 767px) {
+            font-size: 15px;
+        }
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 700;
+        color: $text-b;
+        letter-spacing: -0.5px;
+        margin-bottom: 25px; 
+        @media (max-width: 767px) {
+            font-size: 40px;
+            line-height: 45px;
+            margin-top: 10px;
+            letter-spacing: -1px;
+        }
+    }
+    p {
+        max-width: 670px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        color: $text-g;
+        letter-spacing: -0.5px;
+        margin: 0 auto; 
+        @media (max-width: 767px) {
+            font-size: 17px;
+            line-height: 22px;
+            max-width: 100%;
+        }
+    }
+}
+
+.gb-wallets-main-blk {
+    padding: 60px 0 120px;
+    @media (max-width: 1199px) {
+        padding: 50px 0 100px;
+    }
+    @media (max-width: 991px) {
+        padding: 50px 0 80px;
+    }
+    @media (max-width: 767px) {
+        padding: 80px 0 60px;
+    }
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 700;
+        color: $text-g;
+        letter-spacing: -0.5px;
+        position: relative;
+        @media (max-width: 1199px) {
+            font-size: 22px;
+            line-height: 25px;
+        }
+        @media (max-width: 991px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &:before {
+            position: absolute;
+            top: -120px;
+            right: 0;
+            background: url(../../assets/images/Wallets/awards.svg) no-repeat;
+            background-size: contain;
+            width: 120px;
+            height: 205px;
+            content: "";
+            @media (max-width: 1199px) {
+                width: 110px;
+                height: 175px;
+            }
+            @media (max-width: 991px) {
+                width: 100px;
+                height: 165px;
+            }
+            @media (max-width: 767px) {
+                width: 90px;
+                height: 145px;
+                top: -130px;
+                left: 0;
+                margin: auto;
+            }
+            @media (max-width: 575px) {
+                width: 80px;
+                height: 125px;
+            }
+        }
+    }
+    .col-lg-9 {
+        padding-left: 80px;
+    }
+    .nav-pills {
+        margin: 45px 0 60px;
+        @media (max-width: 1199px) {
+            margin: 35px 0 50px;
+        }
+        @media (max-width: 991px) {
+            margin: 30px 0 40px;
+        }
+        @media (max-width: 767px) {
+            margin: 20px 0 30px;
+        }
+        li {
+            padding: 0 9px;
+            @media (max-width: 767px) {
+                padding: 0 6px 12px;
+            }
+            &:last-child {
+                padding: 0 0 0 9px;
+                @media (max-width: 767px) {
+                    padding: 0 0 12px 6px;
+                }
+            }
+            &:first-child {
+                padding: 0 9px 0 0;
+                @media (max-width: 767px) {
+                    padding: 0 6px 12px 0;
+                }
+            }
+            a {
+                background: $bg-gray;
+                font-size: 20px;
+                line-height: 35px;
+                font-weight: 700;
+                color: $text-g;
+                letter-spacing: -0.5px;
+                padding: 3px 16px;
+                border-radius: 4px;
+                @media (max-width: 1199px) {
+                    font-size: 18px;
+                    line-height: 33px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                    line-height: 31px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+                &.active {
+                    background: $blue;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            h3 {
+                font-size: 15px;
+                line-height: 30px;
+                font-weight: 500;
+                color: $text-g;
+                letter-spacing: -0.5px;
+                margin-bottom: 25px;
+                @media (max-width: 1199px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 13px;
+                    line-height: 10px;
+                    margin-bottom: 20px;
+                }
+                @media (max-width: 767px) {
+                    margin-bottom: 13px;
+                }
+            }
+            .gb-wallet-main {
+                border: 1.5px solid #ecedee;
+                border-radius: 8px;
+                padding: 60px;
+                margin-bottom: 60px;
+                @media (max-width: 1199px) {
+                    padding: 50px;
+                    margin-bottom: 50px;
+                }
+                @media (max-width: 991px) {
+                    padding: 20px;
+                    margin-bottom: 30px;
+                }
+                @media (max-width: 991px) {
+                    padding: 20px;
+                    margin-bottom: 20px;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                .gb-product-img {
+                    @media (max-width: 767px) {
+                        text-align: center;
+                    }
+                    img {
+                        width: 100%;
+                        margin: 0 auto;
+                        @media (max-width: 767px) {
+                            width: 45%;
+                            margin: 10px auto 20px;
+                        }
+                        @media (max-width: 575px) {
+                            width: 50%;
+                        }
+                        @media (max-width: 480px) {
+                            width: 65%;
+                        }
+                    }
+                }
+                .gb-product-name {
+                    @media (max-width: 767px) {
+                        text-align: center;
+                    }
+                    h2 {
+                        font-size: 30px;
+                        line-height: 35px;
+                        font-weight: 700;
+                        color: $text-b;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 1199px) {
+                            font-size: 28px;
+                            line-height: 29px;
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 25px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 22px;
+                            line-height: 27px;
+                        }
+                    }
+                    .gb-rating-review {
+                        display: flex;
+                        align-items: center;
+                        margin: 13px 0;
+                        @media (max-width: 991px) {
+                            margin: 8px 0;
+                        }
+                        @media (max-width: 767px) {
+                            justify-content: center;
+                        }
+                        ul {
+                            margin: 0 10px 0 0;
+                            li {
+                                padding: 0 2px;
+                                display: inline-block;
+                                &:last-child {
+                                    padding: 0 0 0 2px;
+                                }
+                                &:first-child {
+                                    padding: 0 2px 0 0;
+                                }
+                                a {
+                                    display: block;
+                                    .gb-star-icon {
+                                        background: url(../../assets/images/Wallets/gray-star.svg) no-repeat;
+                                        background-size: contain;
+                                        width: 16px;
+                                        height: 16px;
+                                        display: block;
+                                        &.gb-chacked {
+                                            background: url(../../assets/images/Wallets/blue-star.svg) no-repeat;
+                                            background-size: contain;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        h4 {
+                            font-size: 15px;
+                            line-height: 26px;
+                            font-weight: 600;
+                            color: #6f777f;
+                            letter-spacing: -0.5px;
+                            @media (max-width: 767px) {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                    h5 {
+                        font-size: 20px;
+                        line-height: 35px;
+                        font-weight: 700;
+                        color: $text-b;
+                        letter-spacing: -0.5px;
+                        margin-bottom: 10px;
+                        @media (max-width: 1199px) {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 16px;
+                            line-height: 23px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                        span {
+                            color: $green-color;
+                        }
+                    }
+                }
+                .gb-product-detail {
+                    h2 {
+                        font-size: 15px;
+                        line-height: 35px;
+                        font-weight: 700;
+                        color: $text-b;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 1199px) {
+                            font-size: 14px;
+                            line-height: 30px;
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 13px;
+                            line-height: 20px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                    .gb-tabs {
+                        margin: 14px 0 0;
+                        @media (max-width: 767px) {
+                            margin: 14px 0 30px;
+                        }
+                        @media (max-width: 480px) {
+                            margin: 14px 0 20px;
+                        }
+                        ul {
+                            li {
+                                padding: 0 5px;
+                                display: inline-block;
+                                @media (max-width: 575px) {
+                                    padding: 0 5px 7px;
+                                }
+                                &:last-child {
+                                    padding: 0 0 0 5px;
+                                    @media (max-width: 575px) {
+                                        padding: 0 0 7px 5px;
+                                    }
+                                }
+                                &:first-child {
+                                    padding: 0 5px 0 0;
+                                    @media (max-width: 575px) {
+                                        padding: 0 5px 7px 0;
+                                    }
+                                }
+                                a {
+                                    background: $bg-gray;
+                                    font-size: 15px;
+                                    line-height: 26px;
+                                    font-weight: 700;
+                                    color: $text-g;
+                                    letter-spacing: -0.5px;
+                                    padding: 3px 16px;
+                                    border-radius: 4px;
+                                    @media (max-width: 767px) {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 17px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        color: $text-g;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 991px) {
+                            font-size: 15px;
+                            line-height: 24px;
+                        }
+                    }
+                    a {
+                        font-size: 17px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        color: $blue;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 991px) {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                .gb-order-change {
+                    @include transition;
+                        &:hover{
+                            opacity: 0.75;
+                        }
+                    @media (max-width: 767px) {
+                        order: 2;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 20px;
+                    }
+                }
+                .blue-btn {
+                    width: 166px;
+                    height: 41px;
+                    padding: 0;
+                    color: $white;
+                    background: $blue;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 40px;
+                    margin-bottom: 12px;
+                    @media (max-width: 991px) {
+                        width: 130px;
+                        height: 38px;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    @media (max-width: 767px) {
+                        width: 160px;
+                    }
+                }
+                .gray-btn {
+                    width: 166px;
+                    height: 41px;
+                    padding: 0;
+                    color: $white;
+                    background: rgba(67, 70, 88, 0.5);
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 40px;
+                    @media (max-width: 991px) {
+                        width: 130px;
+                        height: 38px;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 767px) {
+                        width: 160px;
+                    }
+                    i {
+                        background: url(../../assets/images/Wallets/play.svg) no-repeat;
+                        background-size: contain;
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 8px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        @media (max-width: 991px) {
+                            width: 13px;
+                            height: 13px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gb-wallets-slider {
+    background: #edf1f2;
+    padding: 120px 0 90px;
+    @media (max-width: 1199px) {
+        padding: 100px 0 80px;
+    }
+    @media (max-width: 991px) {
+        padding: 80px 0 60px;
+    }
+    @media (max-width: 767px) {
+        padding: 60px 0 40px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $text-g;
+        letter-spacing: -0.5px;
+        margin: 0 0 30px;
+        @media (max-width: 1199px) {
+            font-size: 27px;
+            line-height: 30px;
+            margin: 0 0 20px;
+        }
+        @media (max-width: 991px) {
+            font-size: 25px;
+            line-height: 26px;
+            margin: 0 0 10px;
+        }
+        @media (max-width: 767px) {
+            font-size: 22px;
+            line-height: 22px;
+            margin: 0;
+        }
+        @media (max-width: 480px) {
+            font-size: 19px;
+        }
+        span {
+            color: $purple-color;
+        }
+    } 
+}

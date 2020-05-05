@@ -1,0 +1,57 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/gb_variables';
+@import '../../../../assets/scss/mixin';
+
+.gb-glossary-block{
+    padding: 110px 0px;
+    @media (max-width:1199px){
+        padding: 90px 0px;
+    }
+    @media (max-width:767px){
+        padding: 50px 0px;
+    }
+    h1{
+        font-size: 60px;
+        color: $text-b;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 50px;
+        @media (max-width:1199px){
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+        @media (max-width:767px){
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .gb-glossary-detail{
+        h3{
+            font-size: 22px;
+            font-weight: 700;
+            color: $blue;
+            letter-spacing: -0.25px;
+            margin-bottom: 25px;
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 600;
+            color: $text-b;
+            opacity: 0.7;
+            letter-spacing: -0.25px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            letter-spacing: -0.25px;
+            font-weight: 500;
+            color: $text-b;
+        }
+        a{
+            color: $blue;
+            font-size: 16px;
+            letter-spacing: -0.25px;
+            font-weight: 600;
+        }
+    } 
+}

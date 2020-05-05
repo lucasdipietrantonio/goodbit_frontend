@@ -1,0 +1,867 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/gb_variables';
+@import '../../../assets/scss/mixin';
+.gb-buy-by-coin-main {
+    background-image: linear-gradient(60deg, #5288fe 0%, #94c0dc 100%);
+    padding: 120px 0;
+    position: relative;
+    @media (max-width: 1199px) {
+        padding: 90px 0;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+    &:after {
+        content: "";
+        background: url(../../../assets/images/find-wallets/buy-by-coin/buy-by-coin-right.svg) no-repeat;
+        width: 6%;
+        height: 26%;
+        position: absolute;
+        right: 10px;
+        bottom: 40px;
+        @media (max-width: 1199px) {
+            right: 0px;
+        }
+        @media (max-width: 991px) {
+            right: 10px;
+        }
+        @media (max-width: 767px) {
+            background: url(../../../assets/images/find-wallets/find-wallets-top.svg) no-repeat;
+            right: 0;
+            left: 0;
+            bottom: auto;
+            top: 35px;
+            width: 80%;
+            margin: auto;
+        }
+        @media (max-width: 575px) {
+            top: 25px;
+        }
+        @media (max-width:480px) {
+            top: 35px;
+        }
+    }
+    &:before {
+        content: "";
+        background: url(../../../assets/images/find-wallets/buy-by-coin/buy-by-coin-left.svg) no-repeat;
+        background-size: contain;
+        width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 100px;
+        bottom: -83px;
+        @media (max-width: 1440px) {
+            bottom: -101px;
+            left: 60px;
+        }
+        @media (max-width: 1199px) {
+            width: 25%;
+            height: 30%;
+            bottom: -58px;
+        }
+        @media (max-width: 991px) {
+            width: 30%;
+            height: 25%;
+            bottom: -46px;
+            left: 40px;
+        }
+        @media (max-width: 767px) {
+            width: 41%;
+            height: 28%;
+            bottom: -45px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        @media (max-width: 575px) {
+            width: 48%;
+            height: 26%;
+            bottom: -46px;
+        }
+        @media (max-width:480px) {
+            width: 55%;
+            height: 17%;
+            bottom: -36px;
+        }
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: $white;
+        @media (max-width: 1440px) {
+            font-size: 55px;
+            line-height: 60px;
+        }
+        @media (max-width: 1199px) {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        @media (max-width: 991px) {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        @media (max-width: 767px) {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    p {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        color: $white;
+        padding: 40px 0 0;
+        @media (max-width: 1199px) {
+            padding: 20px 0 0;
+        }
+        @media (max-width: 991px) {
+            padding: 15px 0 0;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @media (max-width: 767px) {
+            font-size: 17px;
+            line-height: 28px;
+            padding: 30px 0 0;
+        }
+    }
+    .gb-buy-coin-right {
+        box-shadow: 0px 15px 18px rgba(80, 88, 102, 0.25);
+        background: $white;
+        border-radius: 5px;
+        padding: 30px;
+        @media (max-width: 1199px) {
+            padding: 20px;
+        }
+        @media (max-width: 767px) {
+            box-shadow: none;
+            padding: 0px;
+        }
+        h2 {
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: $blue;
+            padding-bottom: 20px;
+            @media (max-width: 1199px) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @media (max-width: 991px) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+            @media (max-width: 767px) {
+                font-size: 12px;
+                line-height: 17px;
+                padding-bottom: 10px;
+            }
+        }
+        .gb-buy-coin-dropdown {
+            display: block;
+            margin: 20px 0;
+            @media (max-width: 767px) {
+                margin: 40px 0;
+            }
+            @media (max-width: 575px) {
+                margin: 30px 0;
+            }
+            button {
+                color: #565656;
+                background: transparent;
+                border-radius: 0px;
+                border: 0px;
+                border-bottom: 2px solid #c6c6c6;
+                padding: 0;
+                width: 220px;
+                text-align: left;
+                font-size: 25px;
+                line-height: 45px;
+                font-weight: 700;
+                letter-spacing: -0.62px;
+                @media (max-width: 1440px) {
+                    width: 200px;
+                    font-size: 23px;
+                    line-height: 40px;
+                }
+                @media (max-width: 1199px) {
+                    width: 180px;
+                    font-size: 20px;
+                    line-height: 36px;
+                }
+                @media (max-width: 991px) {
+                    line-height: 30px;
+                }
+                @media (max-width: 575px) {
+                    width: 160px;
+                    font-size: 18px;
+                }
+                &:after {
+                    background: url(../../../assets/images/find-wallets/dropdown-arrow.svg) no-repeat;
+                    background-size: contain;
+                    width: 15px;
+                    height: 10px;
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border: 0;
+                    transition: all 0.3s ease-in-out;
+                    @media (max-width: 1199px) {
+                        width: 12px;
+                        height: 7px;
+                    }
+                }
+                &:focus,
+                &:active,
+                &:hover {
+                    background: transparent;
+                    box-shadow: none !important;
+                    color: #565656;
+                    border: 0px;
+                    border-bottom: 2px solid #c6c6c6;
+                }
+            }
+            .dropdown-menu {
+                top: -130px !important;
+                left: 265px !important;
+                padding: 20px;
+                border: 0px;
+                border-radius: 5px;
+                box-shadow: 0px 15px 18px rgba(80, 88, 102, 0.25);
+                transform: translate3d(0px, 0px, 0px) !important;
+                @media (max-width: 1440px) {
+                    left: 245px !important;
+                }
+                @media (max-width: 1199px) {
+                    left: 205px !important;
+                }
+                @media (max-width: 991px) {
+                    left: 95px !important;
+                    padding: 15px;
+                    top: -80px !important;
+                }
+                @media (max-width: 767px) {
+                    top: -100px !important;
+                    left: 215px !important;
+                }
+                @media (max-width: 575px) {
+                    left: 175px !important;
+                }
+                @media (max-width:480px) {
+                    left: 65px !important;
+                }
+                ul {
+                    width: 310px;
+                    height: 310px;
+                    overflow: scroll;
+                    margin: 15px 0 0;
+                    @media (max-width: 1440px) {
+                        height: 290px;
+                        width: 245px;
+                    }
+                    @media (max-width: 1199px) {
+                        width: 205px;
+                        height: 260px;
+                    }
+                    @media (max-width: 767px) {
+                        width: 265px;
+                        height: 260px;
+                    }
+                    @media (max-width: 575px) {
+                        width: 235px;
+                    }
+                    @media (max-width:480px) {
+                        width: 185px;
+                        height: 220px;
+                    }
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        display: none;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: #9c9c9c;
+                        border-radius: 10px;
+                    }
+                    li {
+                        padding: 6px 0;
+                        position: relative;
+                        @media (max-width: 1199px) {
+                            padding: 5px 0;
+                        }
+                        @media (max-width: 991px) {
+                            padding: 4px 0;
+                        }
+                        label{
+                            font-size: 25px;
+                            letter-spacing: -0.5px;
+                            font-weight: 700;
+                            color: #565656;
+                            transition: all 0.3s linear;
+                            -webkit-transition: all 0.3s linear;
+                            -ms-transition: all 0.3s linear;
+                            cursor: pointer;
+                            @media (max-width: 1440px) {
+                                font-size: 23px;
+                            }
+                            @media (max-width: 1199px) {
+                                font-size: 20px;
+                            }
+                            @media (max-width: 991px) {
+                                font-size: 18px;
+                            }
+                            &:hover,
+                            &:focus,
+                            &:active {
+                                color: $blue;
+                            } 
+                            span {
+                                font-weight: 500;
+                                opacity: 0.5;
+                                color: #565656;
+                            }
+                        }
+                        input{
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                            z-index: 10;
+                            cursor: pointer;
+                            &:hover{
+                                + label{
+                                    opacity: 0.75;
+                                }
+                            }
+                        }
+                        input[type=radio]:not(old):checked + label{
+                            color: $blue;
+                        }
+                    }
+                }
+                .gb-close-btn {
+                    background: transparent;
+                    border: 0px;
+                    color: $blue;
+                    font-size: 15px;
+                    width: auto;
+                    float: right;
+                    @media (max-width: 767px) {
+                        float: none;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            &.gb-buy-coin-dropdown-payment {
+                button {
+                    width: 255px;
+                    @media (max-width: 1440px) {
+                        width: 235px;
+                    }
+                    @media (max-width: 1199px) {
+                        width: 205px;
+                    }
+                    @media (max-width: 575px) {
+                        width: 185px;
+                    }
+                }
+                .dropdown-menu {
+                    top: -150px !important;
+                    transform: translateY(0px) !important;
+                    @media (max-width: 991px) {
+                        top: -100px !important;
+                    }
+                    @media (max-width: 767px) {
+                        top: -140px !important;
+                    }
+                    @media (max-width: 575px) {
+                        top: -130px !important;
+                    }
+                }
+            }
+            &.show {
+                button {
+                    box-shadow: none !important;
+                    color: $blue;
+                    border-bottom: 2px solid $blue;
+                    &:after {
+                        background: url(../../../assets/images/find-wallets/dropdown-arrow-blue.svg) no-repeat;
+                        background-size: contain;
+                        transform: rotate(-180deg);
+                    }
+                }
+                .dropdown-menu {
+                    @media (max-width: 767px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                    }
+                }
+            }
+        }
+        form {
+            .form-group {
+                width: 100%;
+                @media (max-width: 1440px) {
+                    margin-bottom: 10px;
+                }
+                @media (max-width: 991px) {
+                    margin-bottom: 8px;
+                }
+                input {
+                    border: 0px;
+                    border-bottom: 1px solid #f3f3f4;
+                    padding: 0 0 5px 0;
+                    border-radius: 0px;
+                    line-height: 35px;
+                    font-size: 25px;
+                    letter-spacing: -0.5px;
+                    font-weight: 700;
+                    width: 80%;
+                    @media (max-width: 1440px) {
+                        padding: 0 0px 4px 0;
+                        line-height: 30px;
+                        font-size: 23px;
+                    }
+                    @media (max-width: 1199px) {
+                        line-height: 30px;
+                        font-size: 21px;
+                    }
+                    @media (max-width: 991px) {
+                        line-height: 27px;
+                        font-size: 20px;
+                        padding: 0;
+                    }
+                    @media (max-width: 767px) {
+                        line-height: 22px;
+                    }
+                    @media (max-width: 480px) {
+                        width: 100%;
+                        font-size: 18px;
+                    }
+                    &:focus,
+                    &:hover,
+                    &:active {
+                        box-shadow: none;
+                    }
+                }
+                 ::-webkit-input-placeholder {
+                    opacity: 0.5;
+                }
+                 ::-moz-placeholder {
+                    opacity: 0.5;
+                }
+                 :-ms-input-placeholder {
+                    opacity: 0.5;
+                }
+                 :-moz-placeholder {
+                    opacity: 0.5;
+                }
+            }
+        }
+        .gb-buy-coin-right-button {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 50px;
+            @media (max-width: 1440px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 767px) {
+                padding-top: 40px;
+            }
+            @media (max-width: 575px) {
+                padding-top: 30px;
+            }
+            .gb-buy-coin-right-button-next {
+                position: relative;
+                margin: 0;
+                background: $blue;
+                width: 114px;
+                height: 41px;
+                border-radius: 20px;
+                color: $white;
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0 24px;
+                border: 0px;
+                @include transition;
+                &:hover{
+                    opacity: 0.75;
+                }
+                @media (max-width: 1199px) {
+                    width: 104px;
+                    height: 37px;
+                    padding: 0 19px;
+                    font-size: 15px;
+                }
+                @media (max-width: 991px) {
+                    width: 100px;
+                    height: 35px;
+                }
+                &:after {
+                    content: "";
+                    background: url(../../../assets/images/find-wallets/white-arrow.svg) no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    width: 12px;
+                    height: 8px;
+                    position: absolute;
+                    right: 24px;
+                    transform: rotate(180deg);
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    @media (max-width: 1199px) {
+                        right: 20px;
+                    }
+                }
+            }
+            .gb-buy-coin-right-button-prev {
+                position: relative;
+                margin: 0;
+                background: none;
+                width: 70px;
+                height: 41px;
+                border-radius: 20px;
+                color: #565656;
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0 0 0 23px;
+                border: 0px;
+                @include transition;
+                &:hover{
+                    opacity: 0.75;
+                }
+                @media (max-width: 1199px) {
+                    height: 37px;
+                    font-size: 15px;
+                    padding: 0 0 0 20px;
+                }
+                @media (max-width: 991px) {
+                    height: 35px;
+                }
+                &:after {
+                    content: "";
+                    background: url(../../../assets/images/find-wallets/gray-arrow.svg) no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    width: 12px;
+                    height: 8px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+.gb-buy-by-coin-main-top-mobile {
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.gb-buy-by-coin-main-bottom-mobile {
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+        background: none;
+        padding: 90px 0 0;
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    @media (max-width: 575px) {
+        padding: 80px 0 0;
+    }
+}
+
+.gb-find-wallets-option-main {
+    padding: 120px 0;
+    @media (max-width: 1199px) {
+        padding: 90px 0;
+    }
+    .gb-find-wallets-options {
+        border-bottom: 1px solid #9aa4b7;
+        opacity: 0.5;
+        h4 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -0.5px;
+            color: #9aa4b7;
+            max-width: 430px;
+            margin-bottom: 10px;
+            @media (max-width: 1199px) {
+                font-size: 25px;
+                line-height: 32px;
+                max-width: 360px;
+            }
+            @media (max-width: 991px) {
+                font-size: 23px;
+                line-height: 30px;
+                max-width: 330px;
+            }
+        }
+    }
+}
+
+.gb-wallets-slider {
+    background: #edf1f2;
+    padding: 120px 0 90px;
+    @media (max-width: 1199px) {
+        padding: 100px 0 80px;
+    }
+    @media (max-width: 991px) {
+        padding: 80px 0 60px;
+    }
+    @media (max-width: 767px) {
+        padding: 60px 0 40px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $text-g;
+        letter-spacing: -0.5px;
+        margin: 0 0 30px;
+        @media (max-width: 1199px) {
+            font-size: 27px;
+            line-height: 30px;
+            margin: 0 0 20px;
+        }
+        @media (max-width: 991px) {
+            font-size: 25px;
+            line-height: 26px;
+            margin: 0 0 10px;
+        }
+        @media (max-width: 767px) {
+            font-size: 22px;
+            line-height: 22px;
+            margin: 0;
+        }
+        @media (max-width: 480px) {
+            font-size: 19px;
+        }
+        span {
+            color: $purple-color;
+        }
+    }
+    .gb-wallet-slider-container {
+        position: relative;
+        padding: 30px 0;
+        &:before {
+            background-image: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            background-image: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            background-image: -o-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            content: "";
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 170px;
+            position: absolute;
+            z-index: 3;
+            @media (max-width: 991px) {
+                width: 110px;
+            }
+            @media (max-width: 767px) {
+                width: 70px;
+            }
+        }
+        &:after {
+            background-image: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            background-image: -moz-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            background-image: -o-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #edf1f2 85%);
+            content: "";
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 170px;
+            position: absolute;
+            z-index: 3;
+            @media (max-width: 991px) {
+                width: 110px;
+            }
+            @media (max-width: 767px) {
+                width: 70px;
+            }
+        }
+        .swiper-wrapper {
+            .swiper-slide {
+                border-radius: 4px;
+                background: $white url(../../../assets/images/Wallets/wallets-line.svg) no-repeat;
+                background-size: 90%;
+                background-position: right -90px bottom;
+                height: 415px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 90px 0;
+                box-shadow: 0px 6px 20px rgba(80, 88, 102, 0.20);
+                @media (max-width: 1199px) {
+                    height: 395px;
+                    padding: 70px 0;
+                }
+                @media (max-width: 991px) {
+                    height: 365px;
+                    padding: 60px 0;
+                    background-position: right -50px bottom;
+                }
+                @media (max-width: 767px) {
+                    height: 325px;
+                    padding: 50px 0;
+                    background-position: right 0 bottom;
+                }
+                &.swiper-slide-active {
+                    box-shadow: 0px 10px 40px rgba(80, 88, 102, 0.25);
+                }
+                .slide-text {
+                    width: 65%;
+                    @media (max-width: 1199px) {
+                        width: 75%;
+                    }
+                    @media (max-width: 991px) {
+                        width: 82%;
+                    }
+                    @media (max-width: 767px) {
+                        width: 89%;
+                    }
+                    h2 {
+                        font-size: 15px;
+                        line-height: 38px;
+                        font-weight: 700;
+                        letter-spacing: -0.5px;
+                        @media (max-width: 991px) {
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+                    }
+                    h3 {
+                        font-size: 40px;
+                        line-height: 50px;
+                        font-weight: 400;
+                        color: $text-b;
+                        letter-spacing: -0.5px;
+                        margin: 15px auto 0;
+                        @media (max-width: 1199px) {
+                            font-size: 35px;
+                            line-height: 40px;
+                            margin: 12px auto 0;
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 33px;
+                            line-height: 40px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 30px;
+                            line-height: 37px;
+                        }
+                    }
+                }
+                .gb-letsgo-btn{
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 40px;
+                    width: 143px;
+                    height: 41px;
+                    border: 0;
+                    line-height: 40px;
+                    @include transition;
+                    &:hover{
+                        opacity: 0.85;
+                    }
+                    @media (max-width: 991px) {
+                        width: 133px;
+                        height: 38px;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 991px) {
+                        width: 123px;
+                        height: 36px;
+                    }
+                    i {
+                        background: url(../../../assets/images/Wallets/next-arrow-letsgo.svg) no-repeat;
+                        background-size: contain;
+                        width: 13px;
+                        height: 10px;
+                        margin-left: 15px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        @media (max-width: 991px) {
+                            margin-left: 11px;
+                        }
+                    }
+                }
+                &.green-slide {
+                    h2 {
+                        color: $green-color;
+                    }
+                    .gb-letsgo-btn {
+                        background: $green-color;
+                    }
+                }
+                &.orange-slide {
+                    h2 {
+                        color: $orange-color;
+                    }
+                    .gb-letsgo-btn {
+                        background: $orange-color;
+                    }
+                }
+            }
+        }
+        .gb-wallet-swiper-button-next {
+            background: url(../../../assets/images/Wallets/wallets-slider-arrow.svg) no-repeat;
+            background-size: contain;
+            width: 16px;
+            height: 28px;
+            transform: rotate(180deg);
+            right: 40px;
+            @media (max-width: 767px) {
+                width: 13px;
+                height: 23px;
+                right: 20px;
+            }
+        }
+        .gb-wallet-swiper-button-prev {
+            background: url(../../../assets/images/Wallets/wallets-slider-arrow.svg) no-repeat;
+            background-size: contain;
+            width: 16px;
+            height: 28px;
+            left: 40px;
+            @media (max-width: 767px) {
+                width: 13px;
+                height: 23px;
+                left: 20px;
+            }
+        }
+    }
+}

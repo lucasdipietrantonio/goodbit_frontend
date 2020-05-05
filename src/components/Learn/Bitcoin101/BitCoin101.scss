@@ -1,0 +1,142 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/gb_variables';
+@import '../../../assets/scss/mixin';
+
+
+.gb-bitcoin-main{
+    .gb-money-banner{
+        &:after{
+            background-image: -webkit-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+            background-image: -moz-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+            background-image: -o-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+            background-image: linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+        }
+        .gb-money-dtl{
+            .gb-bitcoin-icon{
+                &:after{
+                    background: url('../../../assets/images/nav/coin-icon.svg') no-repeat;
+                }
+            }
+        }
+    } 
+    .gb-money-content-wrapper{
+        .gb-money-header {
+            .gb-money-progressbar {
+                .gb-money-inner-bar{
+                    background: $orange-color;
+                }
+            }
+            .gb-money-header-row {
+                .gb-money-left {
+                    width: auto !important;
+                    span{
+                        color: $orange-color;
+                    }
+                }
+            }
+        } 
+        .gb-bitcoin-img1{
+            img{
+                width: 437px;
+            }
+        }
+        .gb-bitcoin-img2{
+            img{
+                width: 277px;
+            }
+        }
+        .gb-bitcoin-img3{
+            margin-bottom: 70px;
+            margin-top: 30px;
+            @media (max-width:991px){
+                margin-bottom: 30px; 
+            }
+            img{
+                width: 438px;
+            }
+        }
+        .gb-bitcoin-img4{
+            img{
+                width: 439px;
+            }
+        }
+        .gb-bitcoin-img5{
+            img{
+                width: 440px;
+            }
+        }
+        .gb-bitcoin-img6{
+            img{
+                width: 423px;
+            }
+        }
+        .gb-bitcoin-img7{
+            margin-left: -50px;
+            @media (max-width:991px){
+                margin: 0px;
+            }
+            img{
+                width: 414px;
+            }
+        }
+        .gb-bitcoin-img8{
+            img{
+                width: 334px;
+            }
+        }
+        .gb-bitcoin-img9{
+            img{
+                width: 202px;
+            }
+        }
+    }
+    .gb-quiz-content-blk{
+        background-image: -webkit-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+        background-image: -moz-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+        background-image: -o-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+        background-image: linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+        .gb-quiz-content-dtl {
+            .gb-begin-blk {
+                .gb-begin-btn{
+                    color: $orange-color;
+                    .gb-right-arrow{
+                        background: url('../../../assets/images/right-arrow-line-orange.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .gb-summary-blk {
+        .gb-summary-title {
+            h3{
+                color: $orange-color;
+            }
+        }
+    }  
+}
+.gb-quiz-bitcoin-modal{
+    .gb-quiz-modal {
+        .gb-quiz-body{
+            background-image: -webkit-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+            background-image: -moz-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+            background-image: -o-linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+            background-image: linear-gradient(150deg, #ef9d43 55%, #ef6464 100%);
+        }
+        .gb-quiz-modal-body {
+            .gb-quiz-slider {
+                .gb-money-question-swiper-button-prev{
+                    color: $orange-color;
+                    .gb-prev-icon{
+                        background: url('../../../assets/images/right-arrow-line-orange.svg') no-repeat;
+                    }
+                }
+                .gb-money-question-swiper-button-next{
+                    color: $orange-color;
+                    .gb-next-icon{
+                        background: url('../../../assets/images/right-arrow-line-orange.svg') no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
